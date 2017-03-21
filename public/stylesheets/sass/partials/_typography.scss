@@ -1,0 +1,70 @@
+// Font weights
+$light: 200;
+$regular: 400;
+$bold: 600;
+$black: 900;
+
+// Display fonts
+.super-heading {
+  @include type-setting(3);
+  color: main-color('sienna');
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: $base-line-height * 0.5 0 0 0;
+  span.light {
+    font-weight: $light;
+    letter-spacing: 0.25rem;
+  }
+}
+
+.subheading {
+  @include type-setting(-1);
+  font-weight: $light;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+.heading-1 {
+  @include type-setting(2);
+  font-weight: $light;
+  text-transform: uppercase;
+  letter-spacing: 0.056rem;
+  text-align: center;
+  width: 70%;
+  margin: $base-line-height auto;
+}
+
+.heading-2 {
+  @include type-setting(1);
+  font-weight: $bold;
+  font-style: italic;
+}
+
+.item-name {
+  @include type-setting(-1);
+  font-weight: $light;
+  letter-spacing: 0.187rem;
+}
+
+.paragraph {
+  @include type-setting(0);
+  font-weight: $regular;
+  width: 70%;
+  margin: 0 auto $base-line-height auto;
+}
+
+.bold {
+  font-weight: $bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.emphasize {
+  font-weight: $bold;
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: main-color('steelblue');
+  border-bottom: 1px solid #eee;
+  opacity: 0.95;
+  @extend %clearfix;
+  .header-row {
+    @include row();
+    width: 95%;
+    margin: 0 auto;
+  }
+  .header-nav {
+    @include col(1, 1);
+  }
+}
+
+section {
+  padding: $base-line-height * 4 0;
+}

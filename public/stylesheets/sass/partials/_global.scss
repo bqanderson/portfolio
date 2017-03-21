@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+// Root settings
+html {
+  background-color: #fff;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  @media only screen and (min-width: $break-medium) {
+    font-size: 18px;
+  }
+}
+
+a {
+    text-decoration: none;
+		color: main-color('steelblue');
+    @include transition(color 0.3s);
+		&:hover {
+			color: main-color('sienna');
+		}
+
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+$main-colors: (
+  'burlywood': #deb887,
+  'licorice': #1c110a,
+  'steelblue': #348aa7,
+  'yellowred': #e9b44c,
+  'sienna': #9b2915
+);
+
+@function main-color($name) {
+  @return map-get($main-colors, $name);
+}
