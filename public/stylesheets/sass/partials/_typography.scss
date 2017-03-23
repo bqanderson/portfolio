@@ -7,7 +7,7 @@ $black: 900;
 // Display fonts
 .super-heading {
   @include type-setting(3);
-  color: main-color('sienna');
+  color: soft-color('honeydew');
   font-weight: $bold;
   text-transform: uppercase;
   letter-spacing: 0.5rem;

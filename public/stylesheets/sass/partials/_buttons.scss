@@ -2,14 +2,14 @@
   display: inline-block;
   appearance: none;
   background: none;
-  color: main-color('licorice');
-  border: solid 2px main-color('licorice');
+  color: soft-color('blue-grey');
+  border: solid 2px soft-color('blue-grey');
   height: $base-line-height * 2;
   padding: 0 1rem;
   font-size: type-scale(-1);
   @include transition(all 0.3s);
   &:hover {
-    background-color: main-color('licorice');
-    color: main-color('steelblue');
+    background-color: soft-color('blue-grey');
+    color: soft-color('honeydew');
   }
 }

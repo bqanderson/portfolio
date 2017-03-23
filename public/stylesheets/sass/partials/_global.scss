@@ -8,7 +8,7 @@
 
 // Root settings
 html {
-  background-color: #fff;
+  background-color: soft-color('honeydew');
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 14px;
   margin: 0 auto;
@@ -19,10 +19,10 @@ html {
 
 a {
     text-decoration: none;
-		color: main-color('steelblue');
+		color: soft-color('grey-blue');
     @include transition(color 0.3s);
 		&:hover {
-			color: main-color('sienna');
+			color: soft-color('gunmetal');
 		}
 
 }

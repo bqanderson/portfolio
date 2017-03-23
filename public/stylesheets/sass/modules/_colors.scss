@@ -6,6 +6,18 @@ $main-colors: (
   'sienna': #9b2915
 );
 
+$soft-colors: (
+  'gunmetal': #273043,
+  'blue-grey': #9197AE,
+  'honeydew': #EFF6EE,
+  'beaver': #9F7E69,
+  'dark-vanilla': #D2BBA0
+);
+
 @function main-color($name) {
   @return map-get($main-colors, $name);
+}
+
+@function soft-color($name) {
+  @return map-get($soft-colors, $name);
 }

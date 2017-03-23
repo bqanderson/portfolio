@@ -220,7 +220,7 @@ select::-ms-expand {
   box-sizing: border-box; }
 
 html {
-  background-color: #fff;
+  background-color: #EFF6EE;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 14px;
   margin: 0 auto; }
@@ -230,14 +230,13 @@ html {
 
 a {
   text-decoration: none;
-  color: #348aa7;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s; }
   a:hover {
-    color: #9b2915; }
+    color: #273043; }
 
 .container {
   width: 75%;
@@ -246,7 +245,7 @@ a {
 .super-heading {
   font-size: 2.369rem;
   line-height: 3rem;
-  color: #9b2915;
+  color: #EFF6EE;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -307,8 +306,8 @@ a {
   display: inline-block;
   appearance: none;
   background: none;
-  color: #1c110a;
-  border: solid 2px #1c110a;
+  color: #9197AE;
+  border: solid 2px #9197AE;
   height: 3rem;
   padding: 0 1rem;
   font-size: 0.75rem;
@@ -318,8 +317,8 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   .btn:hover {
-    background-color: #1c110a;
-    color: #348aa7; }
+    background-color: #9197AE;
+    color: #EFF6EE; }
 
 header {
   width: 100%;
@@ -328,8 +327,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #348aa7;
-  border-bottom: 1px solid #eee;
+  background-color: #9F7E69;
+  border-bottom: 1px solid #9197AE;
   opacity: 0.95; }
   header .header-row {
     font-size: 0;

@@ -5,8 +5,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: main-color('steelblue');
-  border-bottom: 1px solid #eee;
+  background-color: soft-color('beaver');
+  border-bottom: 1px solid soft-color('blue-grey') ;
   opacity: 0.95;
   @extend %clearfix;
   .header-row {
