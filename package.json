@@ -10,9 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "latest",
+    "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
-    "grunt-contrib-cssmin": "latest",
     "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "latest",
