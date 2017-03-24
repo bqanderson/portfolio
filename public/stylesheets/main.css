@@ -1108,7 +1108,7 @@ a {
     color: #23527c;
     text-decoration: underline; }
   a:focus {
-    outline: 0;
+    outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
 figure {
@@ -2446,7 +2446,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 0;
+  outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
 output {
@@ -2908,7 +2908,7 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: 0;
+    outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
     color: #333;
