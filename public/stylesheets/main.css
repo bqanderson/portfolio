@@ -6162,3 +6162,12 @@ header {
 
 section {
   padding: 6rem 0; }
+
+#logo .st0 {
+  fill: #e9b44c; }
+#logo .st1 {
+  fill: #348aa7; }
+#logo:hover .st0 {
+  fill: #348aa7; }
+#logo:hover .st1 {
+  fill: #e9b44c; }

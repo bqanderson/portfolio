@@ -1,0 +1,16 @@
+#logo{
+  .st0{
+    fill: main-color('yellowred')
+  }
+  .st1{
+    fill: main-color('steelblue')
+  }
+  &:hover{
+    .st0{
+      fill: main-color('steelblue')
+    }
+    .st1{
+      fill: main-color('yellowred')
+    }
+  }
+}
