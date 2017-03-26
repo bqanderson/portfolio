@@ -6038,11 +6038,17 @@ html {
 
 a {
   text-decoration: none;
+  color: #9197AE;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s; }
   a:hover {
-    color: #273043; }
+    color: #273043;
+    text-decoration: none; }
+  a:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #9197AE; }
 
 .container {
   width: 75%;
@@ -6108,21 +6114,26 @@ a {
   font-weight: 600;
   font-style: italic; }
 
-.btn {
+.mybtn {
   display: inline-block;
   appearance: none;
   background: none;
   color: #9197AE;
-  border: solid 2px #9197AE;
-  height: 3rem;
+  border: solid 1px;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50% 50% 0 50%;
   padding: 0 1rem;
-  font-size: 0.75rem;
+  font-size: 1.778rem;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-  .btn:hover {
+  .mybtn:hover {
     background-color: #9197AE;
     color: #EFF6EE; }
+  .mybtn:focus {
+    outline: 0;
+    box-shadow: none; }
 
 header {
   width: 100%;
@@ -6132,7 +6143,7 @@ header {
   left: 0;
   z-index: 999;
   background-color: #9F7E69;
-  border-bottom: 1px solid #9197AE;
+  border-bottom: 1px solid;
   opacity: 0.95; }
   header .header-row {
     font-size: 0;
