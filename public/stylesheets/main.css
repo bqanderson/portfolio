@@ -6163,10 +6163,20 @@ header {
 section {
   padding: 6rem 0; }
 
+.logo-wrapper {
+  margin: 1.5rem auto;
+  width: 60%; }
+
 #logo .st0 {
-  fill: #e9b44c; }
+  fill: #e9b44c;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
 #logo .st1 {
-  fill: #348aa7; }
+  fill: #348aa7;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
 #logo:hover .st0 {
   fill: #348aa7; }
 #logo:hover .st1 {

@@ -1,16 +1,24 @@
+// svg wrapper
+.logo-wrapper{
+  margin: $base-line-height auto;
+  width: 60%;
+}
+
 #logo{
   .st0{
-    fill: main-color('yellowred')
+    fill: main-color('yellowred');
+    @include transition(0.3s ease);
   }
   .st1{
-    fill: main-color('steelblue')
+    fill: main-color('steelblue');
+    @include transition(0.3s ease);
   }
   &:hover{
     .st0{
-      fill: main-color('steelblue')
+      fill: main-color('steelblue');
     }
     .st1{
-      fill: main-color('yellowred')
+      fill: main-color('yellowred');
     }
   }
 }
