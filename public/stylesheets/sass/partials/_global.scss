@@ -19,16 +19,14 @@ html {
 
 a {
     text-decoration: none;
-		color: soft-color('blueish');
     @include transition(color 0.3s);
 		&:hover {
-			color: soft-color('gunmetal');
+			color: soft-color('blueish');
       text-decoration: none;
 		}
     &:focus {
       outline: 0;
       text-decoration: none;
-      color: soft-color('blueish');
     }
 
 }

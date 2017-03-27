@@ -6038,17 +6038,15 @@ html {
 
 a {
   text-decoration: none;
-  color: #9197AE;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s; }
   a:hover {
-    color: #273043;
+    color: #9197AE;
     text-decoration: none; }
   a:focus {
     outline: 0;
-    text-decoration: none;
-    color: #9197AE; }
+    text-decoration: none; }
 
 .container {
   width: 75%;
@@ -6114,17 +6112,17 @@ a {
   font-weight: 600;
   font-style: italic; }
 
+.collapsed {
+  color: #9197AE; }
+
 .mybtn {
   display: inline-block;
   appearance: none;
   background: none;
   color: #9197AE;
   border: solid 1px;
-  height: 7.5rem;
-  width: 7.5rem;
-  border-radius: 50% 50% 0 50%;
   padding: 0 1rem;
-  font-size: 1.778rem;
+  font-size: 0.75rem;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
@@ -6134,6 +6132,29 @@ a {
   .mybtn:focus {
     outline: 0;
     box-shadow: none; }
+
+.dialog-bottom-right,
+.dialog-bottom-left,
+.dialog-top-right,
+.dialog-top-left {
+  font-size: 1.333rem;
+  text-align: center;
+  vertical-align: middle;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-right: 0.75rem; }
+
+.dialog-bottom-right {
+  border-radius: 50% 50% 0 50%; }
+
+.dialog-bottom-left {
+  border-radius: 50% 50% 50% 0; }
+
+.dialog-top-right {
+  border-radius: 0 50% 50% 50%; }
+
+.dialog-top-left {
+  border-radius: 50% 0 50% 50%; }
 
 header {
   width: 100%;
@@ -6163,21 +6184,24 @@ header {
 section {
   padding: 6rem 0; }
 
+.dialog-group {
+  margin-bottom: 0.75rem; }
+
 .logo-wrapper {
   margin: 1.5rem auto;
   width: 60%; }
 
 #logo .st0 {
-  fill: #e9b44c;
+  fill: #9F7E69;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease; }
 #logo .st1 {
-  fill: #348aa7;
+  fill: #9197AE;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease; }
 #logo:hover .st0 {
-  fill: #348aa7; }
+  fill: #9197AE; }
 #logo:hover .st1 {
-  fill: #e9b44c; }
+  fill: #9F7E69; }

@@ -5,11 +5,8 @@
   background: none;
   color: soft-color('blueish');
   border: solid 1px soft-color('bluesih');
-  height: $base-line-height * 5;
-  width: $base-line-height * 5;
-  border-radius: 50% 50% 0 50%;
   padding: 0 1rem;
-  font-size: type-scale(2);
+  font-size: type-scale(-1);
   @include transition(all 0.3s);
   &:hover,
    {
@@ -20,4 +17,28 @@
     outline: 0;
     box-shadow: none;
   }
+}
+
+.dialog-bottom-right,
+.dialog-bottom-left,
+.dialog-top-right,
+.dialog-top-left {
+  font-size: type-scale(1);
+  text-align: center;
+  vertical-align: middle;
+  height: $base-line-height * 5;
+  width: $base-line-height * 5;
+  margin-right: $base-line-height * 0.5;
+}
+.dialog-bottom-right {
+  border-radius: 50% 50% 0 50%;
+}
+.dialog-bottom-left {
+  border-radius: 50% 50% 50% 0;
+}
+.dialog-top-right {
+  border-radius: 0 50% 50% 50%;
+}
+.dialog-top-left {
+  border-radius: 50% 0 50% 50%;
 }

@@ -6,19 +6,19 @@
 
 #logo{
   .st0{
-    fill: main-color('yellowred');
+    fill: soft-color('beaver');
     @include transition(0.3s ease);
   }
   .st1{
-    fill: main-color('steelblue');
+    fill: soft-color('blueish');
     @include transition(0.3s ease);
   }
   &:hover{
     .st0{
-      fill: main-color('steelblue');
+      fill: soft-color('blueish');
     }
     .st1{
-      fill: main-color('yellowred');
+      fill: soft-color('beaver');
     }
   }
 }
