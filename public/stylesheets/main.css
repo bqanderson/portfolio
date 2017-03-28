@@ -6189,10 +6189,10 @@ section {
 
 .logo-wrapper {
   margin: 1.5rem auto;
-  width: 60%; }
+  width: 50%; }
 
 #logo .st0 {
-  fill: #9F7E69;
+  fill: #D2BBA0;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease; }
@@ -6204,4 +6204,4 @@ section {
 #logo:hover .st0 {
   fill: #9197AE; }
 #logo:hover .st1 {
-  fill: #9F7E69; }
+  fill: #D2BBA0; }

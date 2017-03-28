@@ -1,12 +1,12 @@
 // svg wrapper
 .logo-wrapper{
   margin: $base-line-height auto;
-  width: 60%;
+  width: 50%;
 }
 
 #logo{
   .st0{
-    fill: soft-color('beaver');
+    fill: soft-color('dark-vanilla');
     @include transition(0.3s ease);
   }
   .st1{
@@ -18,7 +18,7 @@
       fill: soft-color('blueish');
     }
     .st1{
-      fill: soft-color('beaver');
+      fill: soft-color('dark-vanilla');
     }
   }
 }
