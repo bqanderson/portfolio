@@ -1,24 +1,27 @@
 // svg wrapper
 .logo-wrapper{
   margin: $base-line-height auto;
-  width: 50%;
+  width: 80%;
+  @media only screen and (min-width: $break-medium) {
+    width: 65%;
+  }
+  @media only screen and (min-width: $break-large) {
+    width: 50%;
+  }
 }
 
 #logo{
   .st0{
-    fill: soft-color('dark-vanilla');
+    fill: main-color('chartreuse');
     @include transition(0.3s ease);
   }
   .st1{
-    fill: soft-color('blueish');
+    fill: main-color('myrtle-green');
     @include transition(0.3s ease);
   }
   &:hover{
-    .st0{
-      fill: soft-color('blueish');
-    }
-    .st1{
-      fill: soft-color('dark-vanilla');
+    #q{
+      fill: main-color('chartreuse');
     }
   }
 }

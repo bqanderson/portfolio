@@ -8,20 +8,22 @@
 
 // Root settings
 html {
-  background-color: soft-color('honeydew');
+  background-color: main-color('platinum');
   font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  color: main-color('raisin-black');
   margin: 0 auto;
   @media only screen and (min-width: $break-medium) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 a {
     text-decoration: none;
-    @include transition(color 0.3s);
+    color: main-color('myrtle-green');
+    @include transition(all 0.3s);
 		&:hover {
-			color: soft-color('blueish');
+			color: soft-color('eagle-green');
       text-decoration: none;
 		}
     &:focus {
@@ -32,6 +34,9 @@ a {
 }
 
 .container {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
+  @media only screen and (min-width: $break-medium) {
+    width: 75%
+  }
 }

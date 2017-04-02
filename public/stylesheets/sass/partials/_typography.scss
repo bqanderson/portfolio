@@ -7,16 +7,12 @@ $black: 900;
 // Display fonts
 .super-heading {
   @include type-setting(3);
-  color: soft-color('honeydew');
-  font-weight: $bold;
+  color: main-color('eagle-green');
+  font-weight: $light;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
   padding: $base-line-height * 0.5 0 0 0;
-  span.light {
-    font-weight: $light;
-    letter-spacing: 0.25rem;
-  }
 }
 
 .subheading {
@@ -70,5 +66,5 @@ $black: 900;
 }
 
 .collapsed {
-  color: soft-color('blueish');
+  color: main-color('chartreuse');
 }

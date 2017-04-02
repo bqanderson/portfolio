@@ -3,15 +3,15 @@
   display: inline-block;
   appearance: none;
   background: none;
-  color: soft-color('blueish');
-  border: solid 1px soft-color('bluesih');
+  color: main-color('raisin-black');
+  border: solid 1px main-color('raisin-black');
   padding: 0 1rem;
   font-size: type-scale(-1);
   @include transition(all 0.3s);
   &:hover,
    {
-    background-color: soft-color('blueish');
-    color: soft-color('honeydew');
+    background-color: main-color('raisin-black');
+    color: main-color('chartreuse');
   }
   &:focus{
     outline: 0;
