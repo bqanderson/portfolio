@@ -1,27 +1,33 @@
 // svg wrapper
 .logo-wrapper{
   margin: $base-line-height auto;
-  width: 80%;
+  width: 50%;
   @media only screen and (min-width: $break-medium) {
-    width: 65%;
+    width: 30%;
   }
   @media only screen and (min-width: $break-large) {
-    width: 50%;
+    width: 20%;
   }
 }
 
 #logo{
-  .st0{
-    fill: main-color('chartreuse');
-    @include transition(0.3s ease);
+  #brackets{
+    fill: main-color('myrtle-green')
   }
-  .st1{
+  #b, #a{
     fill: main-color('myrtle-green');
     @include transition(0.3s ease);
   }
+  #q{
+    fill: main-color('chartreuse');
+    @include transition(0.3s ease);
+  }
   &:hover{
-    #q{
+    #b, #a{
       fill: main-color('chartreuse');
+    }
+    #q{
+      fill: main-color('myrtle-green');
     }
   }
 }

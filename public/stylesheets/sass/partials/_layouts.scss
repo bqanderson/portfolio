@@ -9,9 +9,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: main-color('raisin-black');
-  border-bottom: 2px solid main-color('chartreuse') ;
-  opacity: 0.95;
+  // background-color: main-color('raisin-black');
+  // opacity: 0.95;
   @extend %clearfix;
   .header-row {
     @include row();
@@ -23,6 +22,16 @@ header {
   }
 }
 
-section {
-  padding: $base-line-height * 4 0;
+// section {
+//   padding: $base-line-height * 4 0;
+// }
+
+div.photo-break {
+	background: url('../images/IMG_5911.jpg') no-repeat fixed;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 1100px;
+	position: relative;
 }
