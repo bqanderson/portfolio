@@ -40,3 +40,7 @@ a {
     width: 75%
   }
 }
+
+.row {
+  @include row();
+}

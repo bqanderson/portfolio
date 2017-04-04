@@ -14,9 +14,8 @@
 // Hide and show nav bar
 var didScroll;
 var lastScrollTop = 0;
-var delta = 40;
+var delta = 5;
 var navbarHeight = $('header').outerHeight();
-var introHeight = 715;
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -40,7 +39,7 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').addClass('nav-up');
+        $('header').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
