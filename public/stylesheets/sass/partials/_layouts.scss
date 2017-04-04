@@ -9,8 +9,13 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  // background-color: main-color('raisin-black');
-  // opacity: 0.95;
+  @include transition(top 0.3s ease-in-out);
+  &.nav-up {
+    top: -$base-line-height * 3;
+  }
+  &.nav-down {
+    background-color: main-color('raisin-black')
+  }
   @extend %clearfix;
   .header-row {
     @include row();
