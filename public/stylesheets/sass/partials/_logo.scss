@@ -1,16 +1,12 @@
 // svg wrapper
 .logo-wrapper{
-  margin: $base-line-height auto;
-  width: 50%;
-  @media only screen and (min-width: $break-medium) {
-    width: 30%;
-  }
-  @media only screen and (min-width: $break-large) {
-    width: 20%;
-  }
+  display: inline-block;
+  margin: $base-line-height * 0.5 auto;
 }
 
 #logo{
+  width: 100%;
+  height: 48px;
   #brackets{
     fill: main-color('myrtle-green')
   }
@@ -25,9 +21,6 @@
   &:hover{
     #b, #a{
       fill: main-color('chartreuse');
-    }
-    #q{
-      fill: main-color('myrtle-green');
     }
   }
 }

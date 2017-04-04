@@ -20,17 +20,48 @@ header {
   .header-nav {
     @include col(1, 1);
   }
+  nav {
+  display: inline-block;
+  float: right;
+  margin: $base-line-height 0;
+  a {
+    @include type-setting(0);
+    font-weight: $light;
+    letter-spacing: 0.2rem;
+    margin-right: $base-line-height;
+    color: main-color('platinum');
+    text-transform: uppercase;
+    @include transition(0.3s ease);
+    &:hover {
+      color: main-color('chartreuse');
+    }
+  }
+}
 }
 
-// section {
-//   padding: $base-line-height * 4 0;
-// }
+section {
+  &#intro {
+    padding: $base-line-height * 6 0;
+  }
+  p.fed {
+    @include type-setting(2);
+    font-weight: $light;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: main-color('platinum');
+    border-top: 2px solid main-color('chartreuse');
+    border-bottom: 2px solid main-color('chartreuse');
+    padding: $base-line-height;
+    margin: $base-line-height * 2 auto;
+    width: 80%;
+  }
+}
 
 div.photo-break {
-	background: url('../images/IMG_5911.jpg') no-repeat fixed;
+	background: no-repeat fixed;
 	background-size: cover;
 	background-position: top center;
-	background-repeat: no-repeat;
 	width: 100%;
 	height: 1100px;
 	position: relative;

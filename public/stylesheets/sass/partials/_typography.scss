@@ -4,7 +4,7 @@ $regular: 400;
 $bold: 600;
 $black: 900;
 
-// Display fonts
+// Main Display font classes
 .super-heading {
   @include type-setting(3);
   color: main-color('eagle-green');
@@ -63,8 +63,4 @@ $black: 900;
 .emphasize {
   font-weight: $bold;
   font-style: italic;
-}
-
-.collapsed {
-  color: main-color('chartreuse');
 }
