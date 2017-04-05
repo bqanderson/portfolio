@@ -9,12 +9,10 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  background-color: main-color('raisin-black');
   @include transition(top 0.3s ease-in-out);
   &.nav-up {
     top: -$base-line-height * 3;
-  }
-  &.nav-down {
-    background-color: main-color('raisin-black')
   }
   @extend %clearfix;
   .header-row {
@@ -37,7 +35,7 @@ header {
     color: main-color('platinum');
     text-transform: uppercase;
     @include transition(0.3s ease);
-    &:hover {
+    &:hover, &:focus {
       color: main-color('chartreuse');
     }
   }
@@ -48,7 +46,7 @@ section {
   &#intro {
     padding: $base-line-height * 6 0;
   }
-  // Adding a grid layout for my work examples
+  // Adding a grid layout for projects section
   &#projects {
     @include row();
 
@@ -59,16 +57,16 @@ section {
       height: $base-line-height * 16;
       color: main-color('platinum');
       &.wolfhouse {
-        background-color: main-color('myrtle-green');
+        background-color: secondary-color('paynes-grey');
       }
       &.ssmn {
-        background-color: main-color('raisin-black');
+        background-color: secondary-color('asparagus');
       }
       &.aldous {
         background-color: main-color('eagle-green');
       }
       &.dookboys {
-        background-color: main-color('myrtle-green');
+        background-color: secondary-color('laurel-green');
       }
     }
   }

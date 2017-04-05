@@ -6,18 +6,16 @@ $main-colors: (
   'platinum': #E8E8E8
 );
 
-$soft-colors: (
-  'gunmetal': #273043,
-  'blueish': #9197AE,
-  'honeydew': #EFF6EE,
-  'beaver': #9F7E69,
-  'dark-vanilla': #D2BBA0
+$secondary-colors: (
+  'paynes-grey': #546A7B,
+  'asparagus': #87A878,
+  'laurel-green': #B0BC98,
 );
 
 @function main-color($name) {
   @return map-get($main-colors, $name);
 }
 
-@function soft-color($name) {
-  @return map-get($soft-colors, $name);
+@function secondary-color($name) {
+  @return map-get($secondary-colors, $name);
 }

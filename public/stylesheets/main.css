@@ -6043,11 +6043,10 @@ a {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
-  a:hover {
-    text-decoration: none; }
-  a:focus {
-    outline: 0;
-    text-decoration: none; }
+  a:hover, a:focus {
+    color: #004D58;
+    text-decoration: none;
+    outline: 0; }
 
 .container {
   width: 90%;
@@ -6167,13 +6166,12 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  background-color: #242331;
   -webkit-transition: top 0.3s ease-in-out;
   -o-transition: top 0.3s ease-in-out;
   transition: top 0.3s ease-in-out; }
   header.nav-up {
     top: -4.5rem; }
-  header.nav-down {
-    background-color: #242331; }
   header .header-row {
     font-size: 0;
     width: 95%;
@@ -6203,7 +6201,7 @@ header {
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
-      header nav a:hover {
+      header nav a:hover, header nav a:focus {
         color: #7FFF00; }
 
 section#intro {
@@ -6225,13 +6223,13 @@ section#projects {
         width: 25%;
         vertical-align: top; } }
     section#projects div.project.wolfhouse {
-      background-color: #28666E; }
+      background-color: #546A7B; }
     section#projects div.project.ssmn {
-      background-color: #242331; }
+      background-color: #87A878; }
     section#projects div.project.aldous {
       background-color: #004D58; }
     section#projects div.project.dookboys {
-      background-color: #28666E; }
+      background-color: #B0BC98; }
 section p.fed {
   font-size: 1.778rem;
   line-height: 3rem;
