@@ -7,6 +7,7 @@
   $(function() {
     $('#logo').click(function () {
       alert("How do you like my new logo?");
+      console.log('Testing console.log');
     });
   });
 })(jQuery);
@@ -14,7 +15,7 @@
 // Hide and show nav bar
 var didScroll;
 var lastScrollTop = 0;
-var delta = 5;
+var delta = 10;
 var navbarHeight = $('header').outerHeight();
 
 $(window).scroll(function(event){
@@ -48,4 +49,4 @@ function hasScrolled() {
     }
 
     lastScrollTop = st;
-}
+};

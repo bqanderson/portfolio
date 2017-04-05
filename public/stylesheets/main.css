@@ -6089,12 +6089,12 @@ a {
 
 .heading-2 {
   font-size: 1.333rem;
-  line-height: 3rem;
+  line-height: 1.5rem;
   font-weight: 600;
   font-style: italic; }
 
-.item-name {
-  font-size: 0.75rem;
+.project-name {
+  font-size: 1.333rem;
   line-height: 1.5rem;
   font-weight: 200;
   letter-spacing: 0.187rem; }
@@ -6208,31 +6208,30 @@ header {
 
 section#intro {
   padding: 9rem 0; }
-section#work {
+section#projects {
   font-size: 0; }
-  section#work div.project {
+  section#projects div.project {
     width: 100%;
     font-size: 1rem;
     display: inline-block;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    height: 24rem;
+    color: #E8E8E8; }
     @media only screen and (min-width: 768px) {
-      section#work div.project {
+      section#projects div.project {
         width: 25%;
         vertical-align: top; } }
-    section#work div.project.wolfhouse {
-      background-color: #28666E;
-      height: 400px;
-      text-align: center; }
-    section#work div.project.ssmn {
-      background-color: #242331;
-      height: 400px; }
-    section#work div.project.aldous {
-      background-color: #004D58;
-      height: 400px; }
-    section#work div.project.dookboys {
-      background-color: #28666E;
-      height: 400px; }
+    section#projects div.project.wolfhouse {
+      background-color: #28666E; }
+    section#projects div.project.ssmn {
+      background-color: #242331; }
+    section#projects div.project.aldous {
+      background-color: #004D58; }
+    section#projects div.project.dookboys {
+      background-color: #28666E; }
 section p.fed {
   font-size: 1.778rem;
   line-height: 3rem;

@@ -49,27 +49,26 @@ section {
     padding: $base-line-height * 6 0;
   }
   // Adding a grid layout for my work examples
-  &#work {
+  &#projects {
     @include row();
 
     div.project{
       @include col(1, 4, $gap: 0);
+      text-align: center;
+      padding: $base-line-height * 2 $base-line-height;
+      height: $base-line-height * 16;
+      color: main-color('platinum');
       &.wolfhouse {
         background-color: main-color('myrtle-green');
-        height: 400px;
-        text-align: center;
       }
       &.ssmn {
         background-color: main-color('raisin-black');
-        height: 400px;
       }
       &.aldous {
         background-color: main-color('eagle-green');
-        height: 400px;
       }
       &.dookboys {
         background-color: main-color('myrtle-green');
-        height: 400px;
       }
     }
   }

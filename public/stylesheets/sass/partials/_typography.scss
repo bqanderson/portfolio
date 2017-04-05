@@ -39,8 +39,8 @@ $black: 900;
   font-style: italic;
 }
 
-.item-name {
-  @include type-setting(-1);
+.project-name {
+  @include type-setting(1);
   font-weight: $light;
   letter-spacing: 0.187rem;
 }
