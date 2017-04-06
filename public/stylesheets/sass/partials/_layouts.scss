@@ -9,10 +9,14 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: main-color('raisin-black');
-  @include transition(top 0.3s ease-in-out);
+  // background-color: main-color('raisin-black');
+  @include transition(all 0.3s ease-in-out);
   &.nav-up {
     top: -$base-line-height * 3;
+    background-color: main-color('raisin-black');
+  }
+  &.nav-down {
+    background-color: main-color('raisin-black');
   }
   @extend %clearfix;
   .header-row {
@@ -27,7 +31,7 @@ header {
   display: inline-block;
   float: right;
   margin: $base-line-height 0;
-  a {
+  a.nav-link {
     @include type-setting(0);
     font-weight: $light;
     letter-spacing: 0.2rem;
@@ -35,8 +39,11 @@ header {
     color: main-color('platinum');
     text-transform: uppercase;
     @include transition(0.3s ease);
-    &:hover, &:focus {
+    &:hover {
       color: main-color('chartreuse');
+    }
+    &:focus {
+      color: main-color('chartruse');
     }
   }
 }

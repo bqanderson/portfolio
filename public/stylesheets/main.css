@@ -6166,12 +6166,14 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #242331;
-  -webkit-transition: top 0.3s ease-in-out;
-  -o-transition: top 0.3s ease-in-out;
-  transition: top 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   header.nav-up {
-    top: -4.5rem; }
+    top: -4.5rem;
+    background-color: #242331; }
+  header.nav-down {
+    background-color: #242331; }
   header .header-row {
     font-size: 0;
     width: 95%;
@@ -6190,7 +6192,7 @@ header {
     display: inline-block;
     float: right;
     margin: 1.5rem 0; }
-    header nav a {
+    header nav a.nav-link {
       font-size: 1rem;
       line-height: 1.5rem;
       font-weight: 200;
@@ -6201,7 +6203,7 @@ header {
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
-      header nav a:hover, header nav a:focus {
+      header nav a.nav-link:hover {
         color: #7FFF00; }
 
 section#intro {
@@ -6261,9 +6263,9 @@ div.photo-break {
   width: 100%;
   height: 48px; }
   #logo #brackets {
-    fill: #28666E; }
+    fill: #E8E8E8; }
   #logo #b, #logo #a {
-    fill: #28666E;
+    fill: #E8E8E8;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease; }
