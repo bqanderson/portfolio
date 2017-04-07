@@ -8,14 +8,6 @@
 -------------------------------------------------------------- */
 /* =Clearfix extend
 -------------------------------------------------------------- */
-header {
-  *zoom: 1; }
-  header:before, header:after {
-    content: " ";
-    display: table; }
-  header:after {
-    clear: both; }
-
 /* =Transition mixin
 -------------------------------------------------------------- */
 /*!
@@ -6208,6 +6200,19 @@ header {
 
 section#intro {
   padding: 9rem 0; }
+  section#intro p.fed {
+    font-size: 1.778rem;
+    line-height: 3rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #E8E8E8;
+    border-top: 2px solid #7FFF00;
+    border-bottom: 2px solid #7FFF00;
+    padding: 1.5rem;
+    margin: 3rem auto;
+    width: 80%; }
 section#projects {
   font-size: 0; }
   section#projects div.project {
@@ -6218,33 +6223,27 @@ section#projects {
     padding-right: 0;
     text-align: center;
     padding: 3rem 1.5rem;
-    height: 24rem;
-    color: #E8E8E8; }
+    height: 27rem; }
     @media only screen and (min-width: 768px) {
       section#projects div.project {
         width: 25%;
         vertical-align: top; } }
-    section#projects div.project.wolfhouse {
-      background-color: #546A7B; }
+    section#projects div.project.bella-luna {
+      background-color: #28666E; }
     section#projects div.project.ssmn {
-      background-color: #87A878; }
-    section#projects div.project.aldous {
       background-color: #004D58; }
+    section#projects div.project.aldous {
+      background-color: #546A7B; }
     section#projects div.project.dookboys {
-      background-color: #B0BC98; }
-section p.fed {
-  font-size: 1.778rem;
-  line-height: 3rem;
-  font-weight: 200;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #E8E8E8;
-  border-top: 2px solid #7FFF00;
-  border-bottom: 2px solid #7FFF00;
-  padding: 1.5rem;
-  margin: 3rem auto;
-  width: 80%; }
+      background-color: #28666E; }
+    section#projects div.project img.project-icons {
+      width: 70%;
+      margin-bottom: 1.5rem;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+      section#projects div.project img.project-icons:hover {
+        transform: scale(1.1); }
 
 div.photo-break {
   background: no-repeat fixed;

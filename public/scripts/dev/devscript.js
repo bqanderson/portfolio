@@ -6,7 +6,7 @@
   });
   $(function() {
     $('#logo').click(function () {
-      alert("How do you like my new logo?");
+      alert("How do you like my new logo? Do you think its awesome?!");
       console.log('Testing console.log');
     });
   });

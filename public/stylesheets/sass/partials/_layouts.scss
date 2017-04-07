@@ -9,7 +9,6 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  // background-color: main-color('raisin-black');
   @include transition(all 0.3s ease-in-out);
   &.nav-up {
     top: -$base-line-height * 3;
@@ -18,7 +17,6 @@ header {
   &.nav-down {
     background-color: main-color('raisin-black');
   }
-  @extend %clearfix;
   .header-row {
     @include row();
     width: 95%;
@@ -52,6 +50,19 @@ header {
 section {
   &#intro {
     padding: $base-line-height * 6 0;
+    p.fed {
+      @include type-setting(2);
+      font-weight: $light;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: main-color('platinum');
+      border-top: 2px solid main-color('chartreuse');
+      border-bottom: 2px solid main-color('chartreuse');
+      padding: $base-line-height;
+      margin: $base-line-height * 2 auto;
+      width: 80%;
+    }
   }
   // Adding a grid layout for projects section
   &#projects {
@@ -61,34 +72,28 @@ section {
       @include col(1, 4, $gap: 0);
       text-align: center;
       padding: $base-line-height * 2 $base-line-height;
-      height: $base-line-height * 16;
-      color: main-color('platinum');
-      &.wolfhouse {
-        background-color: secondary-color('paynes-grey');
+      height: $base-line-height * 18;
+      &.bella-luna {
+        background-color: main-color('myrtle-green');
       }
       &.ssmn {
-        background-color: secondary-color('asparagus');
-      }
-      &.aldous {
         background-color: main-color('eagle-green');
       }
+      &.aldous {
+        background-color: secondary-color('paynes-grey');
+      }
       &.dookboys {
-        background-color: secondary-color('laurel-green');
+        background-color: main-color('myrtle-green');
+      }
+      img.project-icons {
+        width: 70%;
+        margin-bottom: $base-line-height;
+        @include transition(0.3s ease);
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
-  }
-  p.fed {
-    @include type-setting(2);
-    font-weight: $light;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: main-color('platinum');
-    border-top: 2px solid main-color('chartreuse');
-    border-bottom: 2px solid main-color('chartreuse');
-    padding: $base-line-height;
-    margin: $base-line-height * 2 auto;
-    width: 80%;
   }
 }
 
