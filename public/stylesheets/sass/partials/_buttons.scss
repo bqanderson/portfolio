@@ -1,17 +1,15 @@
-// Testing
 .mybtn {
   display: inline-block;
   appearance: none;
   background: none;
-  color: main-color('raisin-black');
-  border: solid 1px main-color('raisin-black');
+  color: main-color('chartreuse');
+  border: solid 1px main-color('chartreuse');
   padding: 0 1rem;
-  font-size: type-scale(-1);
-  @include transition(all 0.3s);
-  &:hover,
-   {
-    background-color: main-color('raisin-black');
-    color: main-color('chartreuse');
+  font-size: type-scale(0);
+  @include transition(all 0.3s ease-in);
+  &:hover {
+    background-color: main-color('chartreuse');
+    color: main-color('raisin-black');
   }
   &:focus{
     outline: 0;
@@ -23,22 +21,21 @@
 .dialog-bottom-left,
 .dialog-top-right,
 .dialog-top-left {
-  font-size: type-scale(1);
-  text-align: center;
+  border-width: 2px;
+  text-transform: uppercase;
   vertical-align: middle;
-  height: $base-line-height * 5;
-  width: $base-line-height * 5;
-  margin-right: $base-line-height * 0.5;
+  padding: 0 $base-line-height;
+  height: $base-line-height * 2;
 }
 .dialog-bottom-right {
-  border-radius: 50% 50% 0 50%;
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
 }
 .dialog-bottom-left {
-  border-radius: 50% 50% 50% 0;
+  border-radius: 1.5rem 1.5rem 1.5rem 0;
 }
 .dialog-top-right {
-  border-radius: 0 50% 50% 50%;
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
 }
 .dialog-top-left {
-  border-radius: 50% 0 50% 50%;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
 }

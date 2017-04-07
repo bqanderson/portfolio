@@ -60,8 +60,8 @@ section {
       border-top: 2px solid main-color('chartreuse');
       border-bottom: 2px solid main-color('chartreuse');
       padding: $base-line-height;
-      margin: $base-line-height * 2 auto;
-      width: 80%;
+      margin: $base-line-height * 2 auto $base-line-height * 6 auto;
+      width: 85%;
     }
   }
   // Adding a grid layout for projects section

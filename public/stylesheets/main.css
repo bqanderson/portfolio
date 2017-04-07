@@ -6045,7 +6045,7 @@ a {
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
     .container {
-      width: 75%; } }
+      width: 80%; } }
 
 .row {
   font-size: 0; }
@@ -6111,16 +6111,16 @@ a {
   display: inline-block;
   appearance: none;
   background: none;
-  color: #242331;
-  border: solid 1px #242331;
+  color: #7FFF00;
+  border: solid 1px #7FFF00;
   padding: 0 1rem;
-  font-size: 0.75rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
   .mybtn:hover {
-    background-color: #242331;
-    color: #7FFF00; }
+    background-color: #7FFF00;
+    color: #242331; }
   .mybtn:focus {
     outline: 0;
     box-shadow: none; }
@@ -6129,24 +6129,23 @@ a {
 .dialog-bottom-left,
 .dialog-top-right,
 .dialog-top-left {
-  font-size: 1.333rem;
-  text-align: center;
+  border-width: 2px;
+  text-transform: uppercase;
   vertical-align: middle;
-  height: 7.5rem;
-  width: 7.5rem;
-  margin-right: 0.75rem; }
+  padding: 0 1.5rem;
+  height: 3rem; }
 
 .dialog-bottom-right {
-  border-radius: 50% 50% 0 50%; }
+  border-radius: 1.5rem 1.5rem 0 1.5rem; }
 
 .dialog-bottom-left {
-  border-radius: 50% 50% 50% 0; }
+  border-radius: 1.5rem 1.5rem 1.5rem 0; }
 
 .dialog-top-right {
-  border-radius: 0 50% 50% 50%; }
+  border-radius: 0 1.5rem 1.5rem 1.5rem; }
 
 .dialog-top-left {
-  border-radius: 50% 0 50% 50%; }
+  border-radius: 1.5rem 0 1.5rem 1.5rem; }
 
 body {
   background-color: #E8E8E8; }
@@ -6211,8 +6210,8 @@ section#intro {
     border-top: 2px solid #7FFF00;
     border-bottom: 2px solid #7FFF00;
     padding: 1.5rem;
-    margin: 3rem auto;
-    width: 80%; }
+    margin: 3rem auto 9rem auto;
+    width: 85%; }
 section#projects {
   font-size: 0; }
   section#projects div.project {
