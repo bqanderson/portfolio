@@ -23,8 +23,8 @@
 .dialog-top-left {
   border-width: 2px;
   text-transform: uppercase;
-  vertical-align: middle;
-  padding: 0 $base-line-height;
+  letter-spacing: 0.1rem;
+  padding: 0 $base-line-height * 2;
   height: $base-line-height * 2;
 }
 .dialog-bottom-right {
