@@ -9,6 +9,35 @@
     <script src="scripts/script.min.js"></script>
   </head>
   <body>
+    <!-- Hello Modal -->
+    <div class="modal fade" id="helloModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-image: url(images/IMG_5911.jpg)">
+          <div class="modal-header">
+            <h4 class="heading-1" id="myModalLabel">Hello World!</h4>
+          </div>
+          <div class="modal-body">
+            <p class="paragraph">
+              As web developers, we have all used this phrase. It's a starting point, an
+              ensurance that we can communicate, that we have a basic handle on a particular
+              language, framework or library.
+            </p>
+            <p class="paragraph">
+              But it's more than just that. It's an introduction, a call to action and it's a
+              reminder of why we code: to connect people around the globe. To share our stories,
+              ideas, and values.
+            </p>
+            <p class="paragraph">
+              So, once again: <span class="emphasize">Hello World!</span>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="mybtn dialog-bottom-right bold" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hello Modal -->
     <header>
       <div class="header-row">
         <div class="header-nav">
@@ -58,7 +87,9 @@
             a history of classic design and a constant focus on user experience.
           </p>
           <div class="text-center">
-            <button id="hello" class="mybtn bold dialog-bottom-left">Say Hello!</button>
+            <button type="button" id="hello" class="mybtn bold dialog-bottom-left" data-toggle="modal" data-target="#helloModal">
+              Say Hello!
+            </button>
           </div>
         </section>
       </div>

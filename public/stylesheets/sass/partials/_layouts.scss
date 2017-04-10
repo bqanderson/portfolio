@@ -57,6 +57,31 @@ div.photo-break {
 	position: relative;
 }
 
+// Hello Modal Layout
+.modal-dialog {
+  width: 75%;
+  margin: $base-line-height * 6;
+}
+.modal-content {
+  background: no-repeat fixed;
+  background-size: cover;
+  background-position: top center;
+  background-color: main-color('myrtle-green');
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
+  .modal-header {
+    color: main-color('chartreuse');
+    padding: 0;
+    border: none;
+  }
+  .modal-body {
+    color: main-color('platinum');
+    padding: 0 0 $base-line-height;
+  }
+  .modal-footer {
+    border: none;
+  }
+}
+
 section {
   &#intro {
     padding: $base-line-height * 6 0;

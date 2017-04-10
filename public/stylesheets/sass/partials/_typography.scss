@@ -12,7 +12,7 @@ $black: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
-  padding: $base-line-height * 0.5 0 0 0;
+  padding: $base-line-height 0 0 0;
 }
 
 .subheading {
@@ -49,16 +49,17 @@ $black: 900;
 .project-description {
   @include type-setting(0);
   color: main-color('raisin-black');
-  .tech {
-    text-transform: uppercase;
-  }
 }
 
 .paragraph {
   @include type-setting(0);
   font-weight: $regular;
-  width: 70%;
-  margin: 0 auto $base-line-height auto;
+  width: 90%;
+  padding: 0 0 $base-line-height;
+  margin: 0 auto;
+  &:last-child {
+    padding: 0;
+  }
 }
 
 .bold {
