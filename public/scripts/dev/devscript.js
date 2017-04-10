@@ -1,13 +1,12 @@
 (function ($) {
   $(function () {
-    $('button').click(function () {
+    $('button#hello').click(function () {
       alert("Hi, My name is Brian Q Anderson...");
     });
   });
   $(function() {
     $('#logo').click(function () {
       alert("How do you like my new logo? Do you think its awesome?!");
-      console.log('Testing console.log');
     });
   });
 })(jQuery);

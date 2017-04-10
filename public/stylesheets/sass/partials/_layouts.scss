@@ -22,29 +22,39 @@ header {
     width: 95%;
     margin: 0 auto;
   }
-  .header-nav {
-    @include col(1, 1);
-  }
+
   nav {
-  display: inline-block;
-  float: right;
-  margin: $base-line-height 0;
-  a.nav-link {
-    @include type-setting(0);
-    font-weight: $light;
-    letter-spacing: 0.2rem;
-    margin-right: $base-line-height;
-    color: main-color('platinum');
-    text-transform: uppercase;
-    @include transition(0.3s ease);
-    &:hover {
-      color: main-color('chartreuse');
-    }
-    &:focus {
-      color: main-color('chartruse');
+    display: inline-block;
+    float: right;
+    margin: $base-line-height 0;
+    a.nav-link {
+      @include type-setting(0);
+      font-weight: $light;
+      letter-spacing: 0.2rem;
+      margin-right: $base-line-height * 2;
+      color: main-color('platinum');
+      text-transform: uppercase;
+      @include transition(0.3s ease);
+      &:hover {
+        color: main-color('chartreuse');
+      }
+      &:focus {
+        color: main-color('chartruse');
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
+
+div.photo-break {
+	background: no-repeat fixed;
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	height: $base-line-height * 30;
+	position: relative;
 }
 
 section {
@@ -64,6 +74,27 @@ section {
       width: 85%;
     }
   }
+
+  &#tag-line {
+    padding: $base-line-height * 3 0;
+    div.avatar {
+      height: $base-line-height * 8;
+      text-align: center;
+      margin-bottom: $base-line-height * 2;
+      .my-avatar {
+        height: 100%;
+      }
+    }
+    p.tag {
+      @include type-setting(2);
+      font-weight: $light;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      color: main-color('eagle-green');
+      padding: 0 $base-line-height * 6 $base-line-height * 3;
+    }
+  }
+
   // Adding a grid layout for projects section
   &#projects {
     @include row();
@@ -72,8 +103,8 @@ section {
       @include col(1, 4, $gap: 0);
       color: main-color('platinum');
       text-align: center;
-      padding: $base-line-height * 2 $base-line-height;
-      height: $base-line-height * 18;
+      padding: $base-line-height * 4 $base-line-height;
+      height: $base-line-height * 20;
       &.bella-luna {
         background-color: main-color('myrtle-green');
       }
@@ -96,13 +127,26 @@ section {
       }
     }
   }
-}
 
-div.photo-break {
-	background: no-repeat fixed;
-	background-size: cover;
-	background-position: top center;
-	width: 100%;
-	height: 715px;
-	position: relative;
+  &#work {
+    padding: $base-line-height * 4 $base-line-height * 6;
+    background-color: main-color('raisin-black');
+    .panel-group, .panel+.panel, .panel-default {
+      margin-top: 0;
+      border: none;
+    }
+    .panel, .panel-heading {
+      border-radius: 0;
+    }
+    .panel-heading {
+      color: main-color('platinum');
+      background-color: main-color('myrtle-green');
+      border-bottom: solid 1px main-color('raisin-black');
+    }
+    .panel-body {
+      color: main-color('raisin-black');
+      background-color: main-color('platinum');
+    }
+  }
+
 }

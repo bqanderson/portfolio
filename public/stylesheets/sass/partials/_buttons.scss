@@ -1,13 +1,48 @@
 .mybtn {
   display: inline-block;
+  font-size: type-scale(0);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   appearance: none;
   background: none;
-  color: main-color('chartreuse');
-  border: solid 1px main-color('chartreuse');
-  padding: 0 1rem;
-  font-size: type-scale(0);
+  padding: 0 $base-line-height * 3;
+  height: $base-line-height * 2;
+  border: solid 2px;
   @include transition(all 0.3s ease-in);
+}
+
+.standard {
+  color: main-color('eagle-green');
+  border-color: main-color('eagle-green');
   &:hover {
+    background-color: main-color('eagle-green');
+    color: main-color('chartreuse');
+  }
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.inverse {
+  color: main-color('platinum');
+  border-color: main-color('platinum');
+  &:hover {
+    background-color: main-color('platinum');
+    color: main-color('raisin-black');
+  }
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.bold {
+  // font-weight: $light;
+  color: main-color('chartreuse');
+  border-color: main-color('chartreuse');
+  &:hover {
+    // font-weight: $regular;
     background-color: main-color('chartreuse');
     color: main-color('raisin-black');
   }
@@ -17,16 +52,6 @@
   }
 }
 
-.dialog-bottom-right,
-.dialog-bottom-left,
-.dialog-top-right,
-.dialog-top-left {
-  border-width: 2px;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  padding: 0 $base-line-height * 2;
-  height: $base-line-height * 2;
-}
 .dialog-bottom-right {
   border-radius: 1.5rem 1.5rem 0 1.5rem;
 }

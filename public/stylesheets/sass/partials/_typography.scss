@@ -43,6 +43,15 @@ $black: 900;
   @include type-setting(1);
   font-weight: $light;
   letter-spacing: 0.187rem;
+  padding-bottom: $base-line-height;
+}
+
+.project-description {
+  @include type-setting(0);
+  color: main-color('raisin-black');
+  .tech {
+    text-transform: uppercase;
+  }
 }
 
 .paragraph {

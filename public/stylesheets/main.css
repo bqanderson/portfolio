@@ -6088,7 +6088,15 @@ a {
   font-size: 1.333rem;
   line-height: 1.5rem;
   font-weight: 200;
-  letter-spacing: 0.187rem; }
+  letter-spacing: 0.187rem;
+  padding-bottom: 1.5rem; }
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #242331; }
+  .project-description .tech {
+    text-transform: uppercase; }
 
 .paragraph {
   font-size: 1rem;
@@ -6109,31 +6117,47 @@ a {
 
 .mybtn {
   display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   appearance: none;
   background: none;
-  color: #7FFF00;
-  border: solid 1px #7FFF00;
-  padding: 0 1rem;
-  font-size: 1rem;
+  padding: 0 4.5rem;
+  height: 3rem;
+  border: solid 2px;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in; }
-  .mybtn:hover {
-    background-color: #7FFF00;
-    color: #242331; }
-  .mybtn:focus {
+
+.standard {
+  color: #004D58;
+  border-color: #004D58; }
+  .standard:hover {
+    background-color: #004D58;
+    color: #7FFF00; }
+  .standard:focus {
     outline: 0;
     box-shadow: none; }
 
-.dialog-bottom-right,
-.dialog-bottom-left,
-.dialog-top-right,
-.dialog-top-left {
-  border-width: 2px;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  padding: 0 3rem;
-  height: 3rem; }
+.inverse {
+  color: #E8E8E8;
+  border-color: #E8E8E8; }
+  .inverse:hover {
+    background-color: #E8E8E8;
+    color: #242331; }
+  .inverse:focus {
+    outline: 0;
+    box-shadow: none; }
+
+.bold {
+  color: #7FFF00;
+  border-color: #7FFF00; }
+  .bold:hover {
+    background-color: #7FFF00;
+    color: #242331; }
+  .bold:focus {
+    outline: 0;
+    box-shadow: none; }
 
 .dialog-bottom-right {
   border-radius: 1.5rem 1.5rem 0 1.5rem; }
@@ -6169,16 +6193,6 @@ header {
     font-size: 0;
     width: 95%;
     margin: 0 auto; }
-  header .header-nav {
-    width: 100%;
-    font-size: 1rem;
-    display: inline-block;
-    padding-left: 1em;
-    padding-right: 1em; }
-    @media only screen and (min-width: 768px) {
-      header .header-nav {
-        width: 100%;
-        vertical-align: top; } }
   header nav {
     display: inline-block;
     float: right;
@@ -6188,7 +6202,7 @@ header {
       line-height: 1.5rem;
       font-weight: 200;
       letter-spacing: 0.2rem;
-      margin-right: 1.5rem;
+      margin-right: 3rem;
       color: #E8E8E8;
       text-transform: uppercase;
       -webkit-transition: 0.3s ease;
@@ -6196,6 +6210,16 @@ header {
       transition: 0.3s ease; }
       header nav a.nav-link:hover {
         color: #7FFF00; }
+      header nav a.nav-link:last-child {
+        margin-right: 0; }
+
+div.photo-break {
+  background: no-repeat fixed;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 45rem;
+  position: relative; }
 
 section#intro {
   padding: 9rem 0; }
@@ -6212,6 +6236,22 @@ section#intro {
     padding: 1.5rem;
     margin: 3rem auto 10.5rem auto;
     width: 85%; }
+section#tag-line {
+  padding: 4.5rem 0; }
+  section#tag-line div.avatar {
+    height: 12rem;
+    text-align: center;
+    margin-bottom: 3rem; }
+    section#tag-line div.avatar .my-avatar {
+      height: 100%; }
+  section#tag-line p.tag {
+    font-size: 1.778rem;
+    line-height: 3rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #004D58;
+    padding: 0 9rem 4.5rem; }
 section#projects {
   font-size: 0; }
   section#projects div.project {
@@ -6222,8 +6262,8 @@ section#projects {
     padding-right: 0;
     color: #E8E8E8;
     text-align: center;
-    padding: 3rem 1.5rem;
-    height: 27rem; }
+    padding: 6rem 1.5rem;
+    height: 30rem; }
     @media only screen and (min-width: 768px) {
       section#projects div.project {
         width: 25%;
@@ -6244,14 +6284,21 @@ section#projects {
       transition: 0.3s ease; }
       section#projects div.project img.project-icons:hover {
         transform: scale(1.1); }
-
-div.photo-break {
-  background: no-repeat fixed;
-  background-size: cover;
-  background-position: top center;
-  width: 100%;
-  height: 715px;
-  position: relative; }
+section#work {
+  padding: 6rem 9rem;
+  background-color: #242331; }
+  section#work .panel-group, section#work .panel + .panel, section#work .panel-default {
+    margin-top: 0;
+    border: none; }
+  section#work .panel, section#work .panel-heading {
+    border-radius: 0; }
+  section#work .panel-heading {
+    color: #E8E8E8;
+    background-color: #28666E;
+    border-bottom: solid 1px #242331; }
+  section#work .panel-body {
+    color: #242331;
+    background-color: #E8E8E8; }
 
 .logo-wrapper {
   display: inline-block;
