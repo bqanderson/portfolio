@@ -9,6 +9,10 @@
   height: $base-line-height * 2;
   border: solid 2px;
   @include transition(all 0.3s ease-in);
+  &.small {
+    font-size: type-scale(-1);
+    padding: 0 $base-line-height;
+  }
 }
 
 .standard {

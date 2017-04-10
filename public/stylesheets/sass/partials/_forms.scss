@@ -1,0 +1,88 @@
+/*============================================================================
+  #forms
+==============================================================================*/
+
+form{
+  margin:0;
+
+  textarea,
+  textarea.form-control,
+  select,
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"] {
+    @include type-setting(-1);
+    border: solid 1px main-color('eagle-green');
+    padding: 0 $base-line-height;
+    box-shadow: none;
+    border-radius: 0;
+
+    @include placeholder {
+      color: main-color('eagle-green');
+    }
+    &:focus{
+      border-color: main-color('raisin-black');
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  p label{
+    margin:0 10px 0 0;
+  }
+
+  textarea {
+    padding:10px;
+  }
+}
+
+.formWrap{
+  &.contactForm{
+   padding-top:40px;
+  }
+
+  .button{
+    width:100%;
+  }
+
+  input{
+    &[type="checkbox"]{
+      margin:0;
+      vertical-align: middle;
+    }
+  }
+
+  form{
+    a{
+      display:block;
+      color: main-color('raisin-black');
+      margin:$base-line-height auto 0;
+    }
+  }
+}
+
+input.qtyInput{
+  width:$base-line-height * 2;
+  height:4$base-line-height * 2;
+  border:1px solid display-color('max-bluegreen');
+  padding:2px 0px 2px 4px;
+  margin:0 auto;
+  display:block;
+  text-align:center;
+  outline:none;
+  &:focus{
+    ::-webkit-inner-spin-button {
+      opacity: 1;
+    }
+  }
+}

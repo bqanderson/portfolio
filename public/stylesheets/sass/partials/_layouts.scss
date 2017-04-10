@@ -60,12 +60,9 @@ div.photo-break {
 // Hello Modal Layout
 .modal-dialog {
   width: 75%;
-  margin: $base-line-height * 6;
+  margin: $base-line-height * 6 auto;
 }
 .modal-content {
-  background: no-repeat fixed;
-  background-size: cover;
-  background-position: top center;
   background-color: main-color('myrtle-green');
   border-radius: 1.5rem 1.5rem 0 1.5rem;
   .modal-header {
@@ -74,8 +71,18 @@ div.photo-break {
     border: none;
   }
   .modal-body {
-    color: main-color('platinum');
+    @include row();
     padding: 0 0 $base-line-height;
+    color: main-color('platinum');
+    .text {
+      @include col(1, 2, $gap: 0);
+      padding: 0 $base-line-height * 0.5 0 $base-line-height;
+    }
+    .modal-form {
+      @include col(1, 2, $gap: 0);
+      padding: 0 $base-line-height 0 $base-line-height * 0.5;
+      border-left: solid 1px main-color('chartreuse');
+    }
   }
   .modal-footer {
     border: none;
@@ -116,7 +123,7 @@ section {
       text-align: center;
       letter-spacing: 0.1rem;
       color: main-color('eagle-green');
-      padding: 0 $base-line-height * 6 $base-line-height * 3;
+      padding: 0 $base-line-height * 4 $base-line-height * 3;
     }
   }
 

@@ -7,12 +7,11 @@ $black: 900;
 // Main Display font classes
 .super-heading {
   @include type-setting(3);
-  color: main-color('eagle-green');
   font-weight: $light;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
-  padding: $base-line-height 0 0 0;
+  padding: $base-line-height 0;
 }
 
 .subheading {
@@ -54,9 +53,8 @@ $black: 900;
 .paragraph {
   @include type-setting(0);
   font-weight: $regular;
-  width: 90%;
+  letter-spacing: 0.075rem;
   padding: 0 0 $base-line-height;
-  margin: 0 auto;
   &:last-child {
     padding: 0;
   }
