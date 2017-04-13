@@ -57,7 +57,7 @@ $type-setting: (
 	font-size: 0;
 }
 
-@mixin col($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+@mixin col($col, $sum, $gap: 1.5rem, $align: top, $first: false, $last: false) {
 	width: 100%;
 	font-size: 1rem;
 	display: inline-block;

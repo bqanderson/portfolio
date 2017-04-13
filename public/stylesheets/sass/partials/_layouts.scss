@@ -75,13 +75,27 @@ div.photo-break {
     padding: 0 0 $base-line-height;
     color: main-color('platinum');
     .text {
-      @include col(1, 2, $gap: 0);
-      padding: 0 $base-line-height * 0.5 0 $base-line-height;
+      visibility: hidden;
+      height: 0;
+      @media(min-width: $break-medium){
+        visibility: visible;
+        height: auto;
+        @include col(1, 2, $gap: 0);
+        padding: 0 $base-line-height * 0.5 0 $base-line-height;
+      }
     }
     .modal-form {
       @include col(1, 2, $gap: 0);
       padding: 0 $base-line-height 0 $base-line-height * 0.5;
       border-left: solid 1px main-color('chartreuse');
+      .form-row {
+        @include row();
+        padding-bottom: $base-line-height;
+      }
+      .form-group {
+        @include col(1, 2, $gap: 0);
+        color: main-color('chartreuse');
+      }
     }
   }
   .modal-footer {

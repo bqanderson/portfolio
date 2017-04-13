@@ -9,45 +9,11 @@
     <script src="../scripts/script.min.js"></script>
   </head>
   <body>
-    <!-- Hello Modal -->
-    <div class="modal fade" id="helloModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="super-heading" id="myModalLabel">Hello World!</h4>
-          </div>
-          <div class="modal-body">
-            <div class="text">
-              <p class="paragraph">
-                As web developers, we have all used this phrase. It's a starting point, an
-                ensurance that we can communicate, that we have a basic handle on a particular
-                language, framework or library.
-              </p>
-              <p class="paragraph">
-                But it's more than just that. It's an introduction, a call to action and it's a
-                reminder of why we code: to connect people around the globe. To share our stories,
-                ideas, and values.
-              </p>
-              <p class="paragraph">
-                So, once again: <span class="emphasize">Hello World!</span>
-              </p>
-            </div>
-            <div class="modal-form">
-              <h2 class="heading-2">Testing the form set-up.</h2>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button class="mybtn small dialog-bottom-right bold" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Hello Modal -->
     <header>
       <div class="header-row">
         <div class="header-nav">
           <div class="logo-wrapper">
-            <a href="#"><svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a href="#intro"><svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	preserveAspectRatio="xMidYMid meet" xml:space="preserve">
             	<g>
             		<g id="b">
@@ -92,7 +58,12 @@
             a history of classic design and a constant focus on user experience.
           </p>
           <div class="text-center">
-            <button type="button" id="hello" class="mybtn bold dialog-bottom-left" data-toggle="modal" data-target="#helloModal">
+            <button
+              href="#"
+              data-toggle="modal"
+              data-target="#helloModal"
+              type="button"
+              class="mybtn bold dialog-bottom-left">
               Say Hello!
             </button>
           </div>
@@ -223,5 +194,56 @@
         </p>
       </section>
     </main>
+
+    <!-- Modals for popups -->
+    <!-- Hello Modal -->
+    <div class="modal fade" id="helloModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="super-heading" id="myModalLabel">Hello World!</h4>
+        </div>
+        <div class="modal-body">
+          <div class="text">
+            <p class="paragraph">
+              As web developers, we have all used this phrase. It's a starting point, an
+              ensurance that we can communicate, that we have a basic handle on a particular
+              language, framework or library.
+            </p>
+            <p class="paragraph">
+              But it's more than just that. It's an introduction, a call to action and it's a
+              reminder of why we code: to connect people around the globe. To share our stories,
+              ideas, and values.
+            </p>
+            <p class="paragraph">
+              So, once again: <span class="emphasize">Hello World!</span>
+            </p>
+          </div>
+          <div class="modal-form">
+            <form
+              class="form-inline"
+              action="https://formspree.io/bqanderson@me.com"
+              method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name..." />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="your.email@example.com" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="mybtn small dialog-bottom-right bold" data-dismiss="modal">Close</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Hello Modal -->
+
   </body>
 </html>
