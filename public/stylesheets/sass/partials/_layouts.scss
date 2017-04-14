@@ -87,14 +87,18 @@ div.photo-break {
     .modal-form {
       @include col(1, 2, $gap: 0);
       padding: 0 $base-line-height 0 $base-line-height * 0.5;
-      border-left: solid 1px main-color('chartreuse');
       .form-row {
         @include row();
         padding-bottom: $base-line-height;
       }
       .form-group {
-        @include col(1, 2, $gap: 0);
-        color: main-color('chartreuse');
+        margin: 0;
+        &.left {
+          @include col(1, 2, $gap: 0.75rem, $first: true);
+        }
+        &.right {
+          @include col(1, 2, $gap: 0.75rem, $last: true);
+        }
       }
     }
   }

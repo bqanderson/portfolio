@@ -6173,6 +6173,136 @@ a {
 .dialog-top-left {
   border-radius: 1.5rem 0 1.5rem 1.5rem; }
 
+/*============================================================================
+  #forms
+==============================================================================*/
+form {
+  margin: 0; }
+  form textarea,
+  form textarea.form-control,
+  form select,
+  form input[type="date"],
+  form input[type="datetime"],
+  form input[type="datetime-local"],
+  form input[type="email"],
+  form input[type="month"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="search"],
+  form input[type="tel"],
+  form input[type="text"],
+  form input[type="time"],
+  form input[type="url"],
+  form input[type="week"] {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    border: solid 2px #348AA7;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    padding: 0 1.5rem;
+    box-shadow: none;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
+    form textarea::-moz-placeholder,
+    form textarea.form-control::-moz-placeholder,
+    form select::-moz-placeholder,
+    form input[type="date"]::-moz-placeholder,
+    form input[type="datetime"]::-moz-placeholder,
+    form input[type="datetime-local"]::-moz-placeholder,
+    form input[type="email"]::-moz-placeholder,
+    form input[type="month"]::-moz-placeholder,
+    form input[type="number"]::-moz-placeholder,
+    form input[type="password"]::-moz-placeholder,
+    form input[type="search"]::-moz-placeholder,
+    form input[type="tel"]::-moz-placeholder,
+    form input[type="text"]::-moz-placeholder,
+    form input[type="time"]::-moz-placeholder,
+    form input[type="url"]::-moz-placeholder,
+    form input[type="week"]::-moz-placeholder {
+      color: #348AA7;
+      opacity: 1; }
+    form textarea:-ms-input-placeholder,
+    form textarea.form-control:-ms-input-placeholder,
+    form select:-ms-input-placeholder,
+    form input[type="date"]:-ms-input-placeholder,
+    form input[type="datetime"]:-ms-input-placeholder,
+    form input[type="datetime-local"]:-ms-input-placeholder,
+    form input[type="email"]:-ms-input-placeholder,
+    form input[type="month"]:-ms-input-placeholder,
+    form input[type="number"]:-ms-input-placeholder,
+    form input[type="password"]:-ms-input-placeholder,
+    form input[type="search"]:-ms-input-placeholder,
+    form input[type="tel"]:-ms-input-placeholder,
+    form input[type="text"]:-ms-input-placeholder,
+    form input[type="time"]:-ms-input-placeholder,
+    form input[type="url"]:-ms-input-placeholder,
+    form input[type="week"]:-ms-input-placeholder {
+      color: #348AA7; }
+    form textarea::-webkit-input-placeholder,
+    form textarea.form-control::-webkit-input-placeholder,
+    form select::-webkit-input-placeholder,
+    form input[type="date"]::-webkit-input-placeholder,
+    form input[type="datetime"]::-webkit-input-placeholder,
+    form input[type="datetime-local"]::-webkit-input-placeholder,
+    form input[type="email"]::-webkit-input-placeholder,
+    form input[type="month"]::-webkit-input-placeholder,
+    form input[type="number"]::-webkit-input-placeholder,
+    form input[type="password"]::-webkit-input-placeholder,
+    form input[type="search"]::-webkit-input-placeholder,
+    form input[type="tel"]::-webkit-input-placeholder,
+    form input[type="text"]::-webkit-input-placeholder,
+    form input[type="time"]::-webkit-input-placeholder,
+    form input[type="url"]::-webkit-input-placeholder,
+    form input[type="week"]::-webkit-input-placeholder {
+      color: #348AA7; }
+    form textarea:focus,
+    form textarea.form-control:focus,
+    form select:focus,
+    form input[type="date"]:focus,
+    form input[type="datetime"]:focus,
+    form input[type="datetime-local"]:focus,
+    form input[type="email"]:focus,
+    form input[type="month"]:focus,
+    form input[type="number"]:focus,
+    form input[type="password"]:focus,
+    form input[type="search"]:focus,
+    form input[type="tel"]:focus,
+    form input[type="text"]:focus,
+    form input[type="time"]:focus,
+    form input[type="url"]:focus,
+    form input[type="week"]:focus {
+      border-color: #28666E;
+      outline: 0;
+      box-shadow: none; }
+  form p label {
+    margin: 0 10px 0 0; }
+  form textarea {
+    padding: 10px; }
+
+.formWrap.contactForm {
+  padding-top: 40px; }
+.formWrap .button {
+  width: 100%; }
+.formWrap input[type="checkbox"] {
+  margin: 0;
+  vertical-align: middle; }
+.formWrap form a {
+  display: block;
+  color: #242331;
+  margin: 1.5rem auto 0; }
+
+input.qtyInput {
+  width: 3rem;
+  height: 4 3rem;
+  border: 1px solid #004D58;
+  padding: 2px 0px 2px 4px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  outline: none; }
+  input.qtyInput:focus ::-webkit-inner-spin-button {
+    opacity: 1; }
+
 body {
   background-color: #E8E8E8; }
 
@@ -6262,8 +6392,7 @@ div.photo-break {
       display: inline-block;
       padding-left: 0;
       padding-right: 0;
-      padding: 0 1.5rem 0 0.75rem;
-      border-left: solid 1px #7FFF00; }
+      padding: 0 1.5rem 0 0.75rem; }
       @media only screen and (min-width: 768px) {
         .modal-content .modal-body .modal-form {
           width: 50%;
@@ -6272,16 +6401,27 @@ div.photo-break {
         font-size: 0;
         padding-bottom: 1.5rem; }
       .modal-content .modal-body .modal-form .form-group {
-        width: 100%;
-        font-size: 1rem;
-        display: inline-block;
-        padding-left: 0;
-        padding-right: 0;
-        color: #7FFF00; }
-        @media only screen and (min-width: 768px) {
-          .modal-content .modal-body .modal-form .form-group {
-            width: 50%;
-            vertical-align: top; } }
+        margin: 0; }
+        .modal-content .modal-body .modal-form .form-group.left {
+          width: 100%;
+          font-size: 1rem;
+          display: inline-block;
+          padding-left: 0;
+          padding-right: 0.75rem; }
+          @media only screen and (min-width: 768px) {
+            .modal-content .modal-body .modal-form .form-group.left {
+              width: 50%;
+              vertical-align: top; } }
+        .modal-content .modal-body .modal-form .form-group.right {
+          width: 100%;
+          font-size: 1rem;
+          display: inline-block;
+          padding-left: 0.75rem;
+          padding-right: 0; }
+          @media only screen and (min-width: 768px) {
+            .modal-content .modal-body .modal-form .form-group.right {
+              width: 50%;
+              vertical-align: top; } }
   .modal-content .modal-footer {
     border: none; }
 

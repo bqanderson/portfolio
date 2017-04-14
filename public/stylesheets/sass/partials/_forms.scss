@@ -22,16 +22,16 @@ form{
   input[type="url"],
   input[type="week"] {
     @include type-setting(-1);
-    border: solid 1px main-color('eagle-green');
+    border: solid 2px secondary-color('steel-blue');
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
     padding: 0 $base-line-height;
     box-shadow: none;
-    border-radius: 0;
+    @include transition(all 0.3s ease-in);
 
-    @include placeholder {
-      color: main-color('eagle-green');
-    }
+    @include placeholder (secondary-color('steel-blue'));
+
     &:focus{
-      border-color: main-color('raisin-black');
+      border-color: main-color('myrtle-green');
       outline: 0;
       box-shadow: none;
     }
@@ -74,7 +74,7 @@ form{
 input.qtyInput{
   width:$base-line-height * 2;
   height:4$base-line-height * 2;
-  border:1px solid display-color('max-bluegreen');
+  border:1px solid main-color('eagle-green');
   padding:2px 0px 2px 4px;
   margin:0 auto;
   display:block;
