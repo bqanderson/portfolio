@@ -22,6 +22,7 @@ form{
   input[type="url"],
   input[type="week"] {
     @include type-setting(-1);
+    letter-spacing: 0.075rem;
     color: main-color('chartreuse');
     border: solid 2px main-color('platinum');
     border-radius: 0;
@@ -30,18 +31,19 @@ form{
     box-shadow: none;
     @include transition(all 0.3s ease-in);
 
-    @include placeholder (main-color('platinum'));
+    @include placeholder (main-color('chartreuse'));
 
     &:focus{
       border-color: main-color('chartreuse');
-      @include placeholder(main-color('chartreuse'));
+      @include placeholder(main-color('platinum'));
       outline: 0;
       box-shadow: none;
     }
   }
 
   textarea.form-control{
-    height: $base-line-height * 9;
+    height: $base-line-height * 6;
+    padding: $base-line-height * 0.25 $base-line-height
   }
 
   .button{

@@ -6196,6 +6196,7 @@ form {
   form input[type="week"] {
     font-size: 0.75rem;
     line-height: 1.5rem;
+    letter-spacing: 0.075rem;
     color: #7FFF00;
     border: solid 2px #E8E8E8;
     border-radius: 0;
@@ -6221,7 +6222,7 @@ form {
     form input[type="time"]::-moz-placeholder,
     form input[type="url"]::-moz-placeholder,
     form input[type="week"]::-moz-placeholder {
-      color: #E8E8E8;
+      color: #7FFF00;
       opacity: 1; }
     form textarea:-ms-input-placeholder,
     form textarea.form-control:-ms-input-placeholder,
@@ -6239,7 +6240,7 @@ form {
     form input[type="time"]:-ms-input-placeholder,
     form input[type="url"]:-ms-input-placeholder,
     form input[type="week"]:-ms-input-placeholder {
-      color: #E8E8E8; }
+      color: #7FFF00; }
     form textarea::-webkit-input-placeholder,
     form textarea.form-control::-webkit-input-placeholder,
     form select::-webkit-input-placeholder,
@@ -6256,7 +6257,7 @@ form {
     form input[type="time"]::-webkit-input-placeholder,
     form input[type="url"]::-webkit-input-placeholder,
     form input[type="week"]::-webkit-input-placeholder {
-      color: #E8E8E8; }
+      color: #7FFF00; }
     form textarea:focus,
     form textarea.form-control:focus,
     form select:focus,
@@ -6292,7 +6293,7 @@ form {
       form input[type="time"]:focus::-moz-placeholder,
       form input[type="url"]:focus::-moz-placeholder,
       form input[type="week"]:focus::-moz-placeholder {
-        color: #7FFF00;
+        color: #E8E8E8;
         opacity: 1; }
       form textarea:focus:-ms-input-placeholder,
       form textarea.form-control:focus:-ms-input-placeholder,
@@ -6310,7 +6311,7 @@ form {
       form input[type="time"]:focus:-ms-input-placeholder,
       form input[type="url"]:focus:-ms-input-placeholder,
       form input[type="week"]:focus:-ms-input-placeholder {
-        color: #7FFF00; }
+        color: #E8E8E8; }
       form textarea:focus::-webkit-input-placeholder,
       form textarea.form-control:focus::-webkit-input-placeholder,
       form select:focus::-webkit-input-placeholder,
@@ -6327,9 +6328,10 @@ form {
       form input[type="time"]:focus::-webkit-input-placeholder,
       form input[type="url"]:focus::-webkit-input-placeholder,
       form input[type="week"]:focus::-webkit-input-placeholder {
-        color: #7FFF00; }
+        color: #E8E8E8; }
   form textarea.form-control {
-    height: 13.5rem; }
+    height: 9rem;
+    padding: 0.375rem 1.5rem; }
   form .button {
     width: 100%; }
   form input[type="checkbox"] {
