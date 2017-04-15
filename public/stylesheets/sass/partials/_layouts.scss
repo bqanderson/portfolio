@@ -99,6 +99,9 @@ div.photo-break {
         &.right {
           @include col(1, 2, $gap: 0.75rem, $last: true);
         }
+        &.full {
+          @include col(1, 1);
+        }
       }
     }
   }

@@ -6196,8 +6196,10 @@ form {
   form input[type="week"] {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    border: solid 2px #348AA7;
-    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    color: #7FFF00;
+    border: solid 2px #E8E8E8;
+    border-radius: 0;
+    background: none;
     padding: 0 1.5rem;
     box-shadow: none;
     -webkit-transition: all 0.3s ease-in;
@@ -6219,7 +6221,7 @@ form {
     form input[type="time"]::-moz-placeholder,
     form input[type="url"]::-moz-placeholder,
     form input[type="week"]::-moz-placeholder {
-      color: #348AA7;
+      color: #E8E8E8;
       opacity: 1; }
     form textarea:-ms-input-placeholder,
     form textarea.form-control:-ms-input-placeholder,
@@ -6237,7 +6239,7 @@ form {
     form input[type="time"]:-ms-input-placeholder,
     form input[type="url"]:-ms-input-placeholder,
     form input[type="week"]:-ms-input-placeholder {
-      color: #348AA7; }
+      color: #E8E8E8; }
     form textarea::-webkit-input-placeholder,
     form textarea.form-control::-webkit-input-placeholder,
     form select::-webkit-input-placeholder,
@@ -6254,7 +6256,7 @@ form {
     form input[type="time"]::-webkit-input-placeholder,
     form input[type="url"]::-webkit-input-placeholder,
     form input[type="week"]::-webkit-input-placeholder {
-      color: #348AA7; }
+      color: #E8E8E8; }
     form textarea:focus,
     form textarea.form-control:focus,
     form select:focus,
@@ -6271,37 +6273,68 @@ form {
     form input[type="time"]:focus,
     form input[type="url"]:focus,
     form input[type="week"]:focus {
-      border-color: #28666E;
+      border-color: #7FFF00;
       outline: 0;
       box-shadow: none; }
-  form p label {
-    margin: 0 10px 0 0; }
-  form textarea {
-    padding: 10px; }
-
-.formWrap.contactForm {
-  padding-top: 40px; }
-.formWrap .button {
-  width: 100%; }
-.formWrap input[type="checkbox"] {
-  margin: 0;
-  vertical-align: middle; }
-.formWrap form a {
-  display: block;
-  color: #242331;
-  margin: 1.5rem auto 0; }
-
-input.qtyInput {
-  width: 3rem;
-  height: 4 3rem;
-  border: 1px solid #004D58;
-  padding: 2px 0px 2px 4px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  outline: none; }
-  input.qtyInput:focus ::-webkit-inner-spin-button {
-    opacity: 1; }
+      form textarea:focus::-moz-placeholder,
+      form textarea.form-control:focus::-moz-placeholder,
+      form select:focus::-moz-placeholder,
+      form input[type="date"]:focus::-moz-placeholder,
+      form input[type="datetime"]:focus::-moz-placeholder,
+      form input[type="datetime-local"]:focus::-moz-placeholder,
+      form input[type="email"]:focus::-moz-placeholder,
+      form input[type="month"]:focus::-moz-placeholder,
+      form input[type="number"]:focus::-moz-placeholder,
+      form input[type="password"]:focus::-moz-placeholder,
+      form input[type="search"]:focus::-moz-placeholder,
+      form input[type="tel"]:focus::-moz-placeholder,
+      form input[type="text"]:focus::-moz-placeholder,
+      form input[type="time"]:focus::-moz-placeholder,
+      form input[type="url"]:focus::-moz-placeholder,
+      form input[type="week"]:focus::-moz-placeholder {
+        color: #7FFF00;
+        opacity: 1; }
+      form textarea:focus:-ms-input-placeholder,
+      form textarea.form-control:focus:-ms-input-placeholder,
+      form select:focus:-ms-input-placeholder,
+      form input[type="date"]:focus:-ms-input-placeholder,
+      form input[type="datetime"]:focus:-ms-input-placeholder,
+      form input[type="datetime-local"]:focus:-ms-input-placeholder,
+      form input[type="email"]:focus:-ms-input-placeholder,
+      form input[type="month"]:focus:-ms-input-placeholder,
+      form input[type="number"]:focus:-ms-input-placeholder,
+      form input[type="password"]:focus:-ms-input-placeholder,
+      form input[type="search"]:focus:-ms-input-placeholder,
+      form input[type="tel"]:focus:-ms-input-placeholder,
+      form input[type="text"]:focus:-ms-input-placeholder,
+      form input[type="time"]:focus:-ms-input-placeholder,
+      form input[type="url"]:focus:-ms-input-placeholder,
+      form input[type="week"]:focus:-ms-input-placeholder {
+        color: #7FFF00; }
+      form textarea:focus::-webkit-input-placeholder,
+      form textarea.form-control:focus::-webkit-input-placeholder,
+      form select:focus::-webkit-input-placeholder,
+      form input[type="date"]:focus::-webkit-input-placeholder,
+      form input[type="datetime"]:focus::-webkit-input-placeholder,
+      form input[type="datetime-local"]:focus::-webkit-input-placeholder,
+      form input[type="email"]:focus::-webkit-input-placeholder,
+      form input[type="month"]:focus::-webkit-input-placeholder,
+      form input[type="number"]:focus::-webkit-input-placeholder,
+      form input[type="password"]:focus::-webkit-input-placeholder,
+      form input[type="search"]:focus::-webkit-input-placeholder,
+      form input[type="tel"]:focus::-webkit-input-placeholder,
+      form input[type="text"]:focus::-webkit-input-placeholder,
+      form input[type="time"]:focus::-webkit-input-placeholder,
+      form input[type="url"]:focus::-webkit-input-placeholder,
+      form input[type="week"]:focus::-webkit-input-placeholder {
+        color: #7FFF00; }
+  form textarea.form-control {
+    height: 13.5rem; }
+  form .button {
+    width: 100%; }
+  form input[type="checkbox"] {
+    margin: 0;
+    vertical-align: middle; }
 
 body {
   background-color: #E8E8E8; }
@@ -6421,6 +6454,16 @@ div.photo-break {
           @media only screen and (min-width: 768px) {
             .modal-content .modal-body .modal-form .form-group.right {
               width: 50%;
+              vertical-align: top; } }
+        .modal-content .modal-body .modal-form .form-group.full {
+          width: 100%;
+          font-size: 1rem;
+          display: inline-block;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem; }
+          @media only screen and (min-width: 768px) {
+            .modal-content .modal-body .modal-form .form-group.full {
+              width: 100%;
               vertical-align: top; } }
   .modal-content .modal-footer {
     border: none; }

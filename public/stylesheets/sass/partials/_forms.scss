@@ -22,33 +22,26 @@ form{
   input[type="url"],
   input[type="week"] {
     @include type-setting(-1);
-    border: solid 2px secondary-color('steel-blue');
-    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    color: main-color('chartreuse');
+    border: solid 2px main-color('platinum');
+    border-radius: 0;
+    background: none;
     padding: 0 $base-line-height;
     box-shadow: none;
     @include transition(all 0.3s ease-in);
 
-    @include placeholder (secondary-color('steel-blue'));
+    @include placeholder (main-color('platinum'));
 
     &:focus{
-      border-color: main-color('myrtle-green');
+      border-color: main-color('chartreuse');
+      @include placeholder(main-color('chartreuse'));
       outline: 0;
       box-shadow: none;
     }
   }
 
-  p label{
-    margin:0 10px 0 0;
-  }
-
-  textarea {
-    padding:10px;
-  }
-}
-
-.formWrap{
-  &.contactForm{
-   padding-top:40px;
+  textarea.form-control{
+    height: $base-line-height * 9;
   }
 
   .button{
@@ -59,30 +52,6 @@ form{
     &[type="checkbox"]{
       margin:0;
       vertical-align: middle;
-    }
-  }
-
-  form{
-    a{
-      display:block;
-      color: main-color('raisin-black');
-      margin:$base-line-height auto 0;
-    }
-  }
-}
-
-input.qtyInput{
-  width:$base-line-height * 2;
-  height:4$base-line-height * 2;
-  border:1px solid main-color('eagle-green');
-  padding:2px 0px 2px 4px;
-  margin:0 auto;
-  display:block;
-  text-align:center;
-  outline:none;
-  &:focus{
-    ::-webkit-inner-spin-button {
-      opacity: 1;
     }
   }
 }
