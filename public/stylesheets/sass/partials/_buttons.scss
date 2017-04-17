@@ -13,6 +13,10 @@
     font-size: type-scale(-1);
     padding: 0 $base-line-height;
   }
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
 }
 
 .standard {
@@ -21,10 +25,6 @@
   &:hover {
     background-color: main-color('eagle-green');
     color: main-color('chartreuse');
-  }
-  &:focus{
-    outline: 0;
-    box-shadow: none;
   }
 }
 
@@ -35,24 +35,14 @@
     background-color: main-color('platinum');
     color: main-color('raisin-black');
   }
-  &:focus{
-    outline: 0;
-    box-shadow: none;
-  }
 }
 
 .bold {
-  // font-weight: $light;
   color: main-color('chartreuse');
   border-color: main-color('chartreuse');
   &:hover {
-    // font-weight: $regular;
     background-color: main-color('chartreuse');
     color: main-color('raisin-black');
-  }
-  &:focus{
-    outline: 0;
-    box-shadow: none;
   }
 }
 

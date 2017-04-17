@@ -6130,6 +6130,9 @@ a {
   .mybtn.small {
     font-size: 0.75rem;
     padding: 0 1.5rem; }
+  .mybtn:focus {
+    outline: 0;
+    box-shadow: none; }
 
 .standard {
   color: #004D58;
@@ -6137,9 +6140,6 @@ a {
   .standard:hover {
     background-color: #004D58;
     color: #7FFF00; }
-  .standard:focus {
-    outline: 0;
-    box-shadow: none; }
 
 .inverse {
   color: #E8E8E8;
@@ -6147,9 +6147,6 @@ a {
   .inverse:hover {
     background-color: #E8E8E8;
     color: #242331; }
-  .inverse:focus {
-    outline: 0;
-    box-shadow: none; }
 
 .bold {
   color: #7FFF00;
@@ -6157,9 +6154,6 @@ a {
   .bold:hover {
     background-color: #7FFF00;
     color: #242331; }
-  .bold:focus {
-    outline: 0;
-    box-shadow: none; }
 
 .dialog-bottom-right {
   border-radius: 1.5rem 1.5rem 0 1.5rem; }
