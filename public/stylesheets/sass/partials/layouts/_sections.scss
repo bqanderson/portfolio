@@ -1,0 +1,100 @@
+// Intro Background Photo
+div.photo-break {
+	background: no-repeat fixed;
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	height: $base-line-height * 30;
+	position: relative;
+}
+
+section {
+  &#intro {
+    padding: $base-line-height * 6 0;
+    p.fed {
+      @include type-setting(2);
+      font-weight: $light;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: main-color('platinum');
+      border-top: 2px solid main-color('chartreuse');
+      border-bottom: 2px solid main-color('chartreuse');
+      padding: $base-line-height;
+      margin: $base-line-height * 2 auto $base-line-height * 7 auto;
+      width: 85%;
+    }
+  }
+
+  &#tag-line {
+    padding: $base-line-height * 3 0;
+    div.avatar {
+      height: $base-line-height * 8;
+      text-align: center;
+      margin-bottom: $base-line-height * 2;
+      .my-avatar {
+        height: 100%;
+      }
+    }
+    p.tag {
+      @include type-setting(2);
+      font-weight: $light;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      color: main-color('eagle-green');
+      padding: 0 $base-line-height * 4 $base-line-height * 3;
+    }
+  }
+
+  &#projects {
+    div.project{
+      @include col(1, 4, $gap: 0);
+      color: main-color('platinum');
+      text-align: center;
+      padding: $base-line-height * 4 $base-line-height;
+      height: $base-line-height * 20;
+      &.bella-luna {
+        background-color: main-color('myrtle-green');
+      }
+      &.ssmn {
+        background-color: main-color('eagle-green');
+      }
+      &.aldous {
+        background-color: secondary-color('paynes-grey');
+      }
+      &.dookboys {
+        background-color: main-color('myrtle-green');
+      }
+      img.project-icons {
+        width: 70%;
+        margin-bottom: $base-line-height;
+        @include transition(0.3s ease);
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &#work {
+    padding: $base-line-height * 4 $base-line-height * 6;
+    background-color: main-color('raisin-black');
+    .panel-group, .panel+.panel, .panel-default {
+      margin-top: 0;
+      border: none;
+    }
+    .panel, .panel-heading {
+      border-radius: 0;
+    }
+    .panel-heading {
+      color: main-color('platinum');
+      background-color: main-color('myrtle-green');
+      border-bottom: solid 1px main-color('raisin-black');
+    }
+    .panel-body {
+      color: main-color('raisin-black');
+      background-color: main-color('platinum');
+    }
+  }
+
+}

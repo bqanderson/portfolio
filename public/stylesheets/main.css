@@ -6324,7 +6324,7 @@ form {
       form input[type="week"]:focus::-webkit-input-placeholder {
         color: #E8E8E8; }
   form textarea.form-control {
-    height: 9rem;
+    height: 10.5rem;
     padding: 0.375rem 1.5rem; }
   form .button {
     width: 100%; }
@@ -6382,6 +6382,83 @@ div.photo-break {
   height: 45rem;
   position: relative; }
 
+section#intro {
+  padding: 9rem 0; }
+  section#intro p.fed {
+    font-size: 1.778rem;
+    line-height: 3rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #E8E8E8;
+    border-top: 2px solid #7FFF00;
+    border-bottom: 2px solid #7FFF00;
+    padding: 1.5rem;
+    margin: 3rem auto 10.5rem auto;
+    width: 85%; }
+section#tag-line {
+  padding: 4.5rem 0; }
+  section#tag-line div.avatar {
+    height: 12rem;
+    text-align: center;
+    margin-bottom: 3rem; }
+    section#tag-line div.avatar .my-avatar {
+      height: 100%; }
+  section#tag-line p.tag {
+    font-size: 1.778rem;
+    line-height: 3rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #004D58;
+    padding: 0 6rem 4.5rem; }
+section#projects div.project {
+  width: 100%;
+  font-size: 1rem;
+  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
+  color: #E8E8E8;
+  text-align: center;
+  padding: 6rem 1.5rem;
+  height: 30rem; }
+  @media only screen and (min-width: 768px) {
+    section#projects div.project {
+      width: 25%;
+      vertical-align: top; } }
+  section#projects div.project.bella-luna {
+    background-color: #28666E; }
+  section#projects div.project.ssmn {
+    background-color: #004D58; }
+  section#projects div.project.aldous {
+    background-color: #546A7B; }
+  section#projects div.project.dookboys {
+    background-color: #28666E; }
+  section#projects div.project img.project-icons {
+    width: 70%;
+    margin-bottom: 1.5rem;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    section#projects div.project img.project-icons:hover {
+      transform: scale(1.1); }
+section#work {
+  padding: 6rem 9rem;
+  background-color: #242331; }
+  section#work .panel-group, section#work .panel + .panel, section#work .panel-default {
+    margin-top: 0;
+    border: none; }
+  section#work .panel, section#work .panel-heading {
+    border-radius: 0; }
+  section#work .panel-heading {
+    color: #E8E8E8;
+    background-color: #28666E;
+    border-bottom: solid 1px #242331; }
+  section#work .panel-body {
+    color: #242331;
+    background-color: #E8E8E8; }
+
 .modal-dialog {
   width: 75%;
   margin: 9rem auto; }
@@ -6412,7 +6489,7 @@ div.photo-break {
           padding: 0 0.75rem 0 1.5rem; } }
   @media only screen and (min-width: 768px) and (min-width: 768px) {
     .modal-content .modal-body .text {
-      width: 50%;
+      width: 41.66667%;
       vertical-align: top; } }
 
     .modal-content .modal-body .modal-form {
@@ -6424,7 +6501,7 @@ div.photo-break {
       padding: 0 1.5rem 0 0.75rem; }
       @media only screen and (min-width: 768px) {
         .modal-content .modal-body .modal-form {
-          width: 50%;
+          width: 58.33333%;
           vertical-align: top; } }
       .modal-content .modal-body .modal-form .form-row {
         font-size: 0;
@@ -6463,85 +6540,6 @@ div.photo-break {
               vertical-align: top; } }
   .modal-content .modal-footer {
     border: none; }
-
-section#intro {
-  padding: 9rem 0; }
-  section#intro p.fed {
-    font-size: 1.778rem;
-    line-height: 3rem;
-    font-weight: 200;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: #E8E8E8;
-    border-top: 2px solid #7FFF00;
-    border-bottom: 2px solid #7FFF00;
-    padding: 1.5rem;
-    margin: 3rem auto 10.5rem auto;
-    width: 85%; }
-section#tag-line {
-  padding: 4.5rem 0; }
-  section#tag-line div.avatar {
-    height: 12rem;
-    text-align: center;
-    margin-bottom: 3rem; }
-    section#tag-line div.avatar .my-avatar {
-      height: 100%; }
-  section#tag-line p.tag {
-    font-size: 1.778rem;
-    line-height: 3rem;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    color: #004D58;
-    padding: 0 6rem 4.5rem; }
-section#projects {
-  font-size: 0; }
-  section#projects div.project {
-    width: 100%;
-    font-size: 1rem;
-    display: inline-block;
-    padding-left: 0;
-    padding-right: 0;
-    color: #E8E8E8;
-    text-align: center;
-    padding: 6rem 1.5rem;
-    height: 30rem; }
-    @media only screen and (min-width: 768px) {
-      section#projects div.project {
-        width: 25%;
-        vertical-align: top; } }
-    section#projects div.project.bella-luna {
-      background-color: #28666E; }
-    section#projects div.project.ssmn {
-      background-color: #004D58; }
-    section#projects div.project.aldous {
-      background-color: #546A7B; }
-    section#projects div.project.dookboys {
-      background-color: #28666E; }
-    section#projects div.project img.project-icons {
-      width: 70%;
-      margin-bottom: 1.5rem;
-      -webkit-transition: 0.3s ease;
-      -o-transition: 0.3s ease;
-      transition: 0.3s ease; }
-      section#projects div.project img.project-icons:hover {
-        transform: scale(1.1); }
-section#work {
-  padding: 6rem 9rem;
-  background-color: #242331; }
-  section#work .panel-group, section#work .panel + .panel, section#work .panel-default {
-    margin-top: 0;
-    border: none; }
-  section#work .panel, section#work .panel-heading {
-    border-radius: 0; }
-  section#work .panel-heading {
-    color: #E8E8E8;
-    background-color: #28666E;
-    border-bottom: solid 1px #242331; }
-  section#work .panel-body {
-    color: #242331;
-    background-color: #E8E8E8; }
 
 .logo-wrapper {
   display: inline-block;

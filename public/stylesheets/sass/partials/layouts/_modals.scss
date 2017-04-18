@@ -1,0 +1,52 @@
+// Hello Modal Layout
+.modal-dialog {
+  width: 75%;
+  margin: $base-line-height * 6 auto;
+}
+.modal-content {
+  background-color: main-color('myrtle-green');
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
+  .modal-header {
+    color: main-color('chartreuse');
+    padding: 0;
+    border: none;
+  }
+  .modal-body {
+    @include row();
+    padding: 0 0 $base-line-height;
+    color: main-color('platinum');
+    .text {
+      visibility: hidden;
+      height: 0;
+      @media(min-width: $break-medium){
+        visibility: visible;
+        height: auto;
+        @include col(5, 12, $gap: 0);
+        padding: 0 $base-line-height * 0.5 0 $base-line-height;
+      }
+    }
+    .modal-form {
+      @include col(7, 12, $gap: 0);
+      padding: 0 $base-line-height 0 $base-line-height * 0.5;
+      .form-row {
+        @include row();
+        padding-bottom: $base-line-height;
+      }
+      .form-group {
+        margin: 0;
+        &.left {
+          @include col(1, 2, $gap: 0.75rem, $first: true);
+        }
+        &.right {
+          @include col(1, 2, $gap: 0.75rem, $last: true);
+        }
+        &.full {
+          @include col(1, 1);
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border: none;
+  }
+}
