@@ -17,32 +17,29 @@
     outline: 0;
     box-shadow: none;
   }
-}
-
-.standard {
-  color: main-color('eagle-green');
-  border-color: main-color('eagle-green');
-  &:hover {
-    background-color: main-color('eagle-green');
+  &.standard {
+    color: main-color('eagle-green');
+    border-color: main-color('eagle-green');
+    &:hover {
+      background-color: main-color('eagle-green');
+      color: main-color('chartreuse');
+    }
+  }
+  &.inverse {
+    color: main-color('platinum');
+    border-color: main-color('platinum');
+    &:hover {
+      background-color: main-color('platinum');
+      color: main-color('raisin-black');
+    }
+  }
+  &.bold {
     color: main-color('chartreuse');
-  }
-}
-
-.inverse {
-  color: main-color('platinum');
-  border-color: main-color('platinum');
-  &:hover {
-    background-color: main-color('platinum');
-    color: main-color('raisin-black');
-  }
-}
-
-.bold {
-  color: main-color('chartreuse');
-  border-color: main-color('chartreuse');
-  &:hover {
-    background-color: main-color('chartreuse');
-    color: main-color('raisin-black');
+    border-color: main-color('chartreuse');
+    &:hover {
+      background-color: main-color('chartreuse');
+      color: main-color('raisin-black');
+    }
   }
 }
 

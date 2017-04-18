@@ -1,7 +1,10 @@
 // Smooth scrolling to anchor tags
+
+// Testing something
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $('a').on('click', function(event) {
+  $('a:not(.noScroll)').on('click', function(event) {
+    console.log('Link Clicked');
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {

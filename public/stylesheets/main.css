@@ -6133,27 +6133,24 @@ a {
   .mybtn:focus {
     outline: 0;
     box-shadow: none; }
-
-.standard {
-  color: #004D58;
-  border-color: #004D58; }
-  .standard:hover {
-    background-color: #004D58;
-    color: #7FFF00; }
-
-.inverse {
-  color: #E8E8E8;
-  border-color: #E8E8E8; }
-  .inverse:hover {
-    background-color: #E8E8E8;
-    color: #242331; }
-
-.bold {
-  color: #7FFF00;
-  border-color: #7FFF00; }
-  .bold:hover {
-    background-color: #7FFF00;
-    color: #242331; }
+  .mybtn.standard {
+    color: #004D58;
+    border-color: #004D58; }
+    .mybtn.standard:hover {
+      background-color: #004D58;
+      color: #7FFF00; }
+  .mybtn.inverse {
+    color: #E8E8E8;
+    border-color: #E8E8E8; }
+    .mybtn.inverse:hover {
+      background-color: #E8E8E8;
+      color: #242331; }
+  .mybtn.bold {
+    color: #7FFF00;
+    border-color: #7FFF00; }
+    .mybtn.bold:hover {
+      background-color: #7FFF00;
+      color: #242331; }
 
 .dialog-bottom-right {
   border-radius: 1.5rem 1.5rem 0 1.5rem; }
