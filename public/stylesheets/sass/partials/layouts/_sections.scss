@@ -79,9 +79,13 @@ section {
   &#work {
     padding: $base-line-height * 4 $base-line-height * 6;
     background-color: main-color('raisin-black');
+    color: main-color('platinum');
     .panel-group, .panel+.panel, .panel-default {
       margin-top: 0;
       border: none;
+    }
+    .panel-group {
+      margin-bottom: $base-line-height;
     }
     .panel, .panel-heading {
       border-radius: 0;
@@ -90,6 +94,12 @@ section {
       color: main-color('platinum');
       background-color: main-color('myrtle-green');
       border-bottom: solid 1px main-color('raisin-black');
+      .job-title{
+        float: left;
+      }
+      .job-date{
+        float: right;
+      }
     }
     .panel-body {
       color: main-color('raisin-black');

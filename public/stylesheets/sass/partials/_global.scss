@@ -23,7 +23,7 @@ a {
   color: main-color('myrtle-green');
   @include transition(all 0.3s);
 	&:hover, &:focus {
-		color: main-color('eagle-green');
+		color: main-color('chartreuse');
     text-decoration: none;
     outline: 0;
 	}

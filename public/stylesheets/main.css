@@ -6036,7 +6036,7 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   a:hover, a:focus {
-    color: #004D58;
+    color: #7FFF00;
     text-decoration: none;
     outline: 0; }
 
@@ -6445,22 +6445,29 @@ section#projects div.project {
       transform: scale(1.1); }
 section#work {
   padding: 6rem 9rem;
-  background-color: #242331; }
+  background-color: #242331;
+  color: #E8E8E8; }
   section#work .panel-group, section#work .panel + .panel, section#work .panel-default {
     margin-top: 0;
     border: none; }
+  section#work .panel-group {
+    margin-bottom: 1.5rem; }
   section#work .panel, section#work .panel-heading {
     border-radius: 0; }
   section#work .panel-heading {
     color: #E8E8E8;
     background-color: #28666E;
     border-bottom: solid 1px #242331; }
+    section#work .panel-heading .job-title {
+      float: left; }
+    section#work .panel-heading .job-date {
+      float: right; }
   section#work .panel-body {
     color: #242331;
     background-color: #E8E8E8; }
 
 .modal-dialog {
-  width: 75%;
+  width: 80%;
   margin: 9rem auto; }
 
 .modal-content {
