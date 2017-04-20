@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,400i,600,600i,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,400i,700,700i,900");
 /* =Veriables for Media Breakpoints
 -------------------------------------------------------------- */
 /* =Module for Veritcal Rhythm
@@ -6080,7 +6080,7 @@ a {
 .heading-2 {
   font-size: 1.333rem;
   line-height: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic; }
 
 .project-name {
@@ -6105,13 +6105,13 @@ a {
     padding: 0; }
 
 .bold {
-  font-weight: 600; }
+  font-weight: 700; }
 
 .italic {
   font-style: italic; }
 
 .emphasize {
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic; }
 
 .mybtn {
@@ -6448,13 +6448,20 @@ section#work {
     margin-top: 0;
     border: none; }
   section#work .panel-group {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 4.5rem; }
   section#work .panel, section#work .panel-heading {
     border-radius: 0; }
+  section#work .panel-body {
+    padding: 1.5rem; }
   section#work .panel-heading {
+    line-height: 1.5rem;
     color: #E8E8E8;
     background-color: #28666E;
-    border-bottom: solid 1px #242331; }
+    border-bottom: solid 1px #242331;
+    margin: 0;
+    padding: 0; }
+    section#work .panel-heading .panel-title {
+      padding: 0.75rem; }
     section#work .panel-heading .job-title {
       float: left; }
     section#work .panel-heading .job-date {
@@ -6462,6 +6469,10 @@ section#work {
   section#work .panel-body {
     color: #242331;
     background-color: #E8E8E8; }
+    section#work .panel-body hr {
+      margin: 0 auto 1.5rem;
+      border-top: 1px solid #242331;
+      width: 80%; }
 
 .modal-dialog {
   width: 80%;

@@ -85,15 +85,24 @@ section {
       border: none;
     }
     .panel-group {
-      margin-bottom: $base-line-height;
+      margin-bottom: $base-line-height * 3;
     }
     .panel, .panel-heading {
       border-radius: 0;
     }
+    .panel-body {
+      padding: $base-line-height;
+    }
     .panel-heading {
+      line-height: $base-line-height;
       color: main-color('platinum');
       background-color: main-color('myrtle-green');
       border-bottom: solid 1px main-color('raisin-black');
+			margin: 0;
+			padding: 0;
+			.panel-title{
+				padding: $base-line-height * 0.5;
+			}
       .job-title{
         float: left;
       }
@@ -104,6 +113,11 @@ section {
     .panel-body {
       color: main-color('raisin-black');
       background-color: main-color('platinum');
+      hr {
+        margin: 0 auto $base-line-height;
+        border-top: 1px solid main-color('raisin-black');
+        width: 80%;
+      }
     }
   }
 
