@@ -6145,10 +6145,10 @@ a {
     .mybtn.inverse:hover {
       background-color: #E8E8E8;
       color: #242331; }
-  .mybtn.bold {
+  .mybtn.bright {
     color: #7FFF00;
     border-color: #7FFF00; }
-    .mybtn.bold:hover {
+    .mybtn.bright:hover {
       background-color: #7FFF00;
       color: #242331; }
 
