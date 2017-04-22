@@ -6019,14 +6019,14 @@ select::-ms-expand {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
+html, body {
   background-color: #242331;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 18px;
   color: #242331;
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
-    html {
+    html, body {
       font-size: 16px; } }
 
 a {
