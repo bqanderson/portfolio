@@ -23,11 +23,18 @@ header {
     display: inline-block;
     float: right;
     margin: $base-line-height 0;
+    li.menu-item{
+      display: inline-block;
+      margin-right: $base-line-height * 2;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
     a.nav-link {
       @include type-setting(0);
+      display: inline-block;
       font-weight: $light;
       letter-spacing: 0.2rem;
-      margin-right: $base-line-height * 2;
       color: main-color('platinum');
       text-transform: uppercase;
       @include transition(0.3s ease);
@@ -36,9 +43,6 @@ header {
       }
       &:focus {
         color: main-color('chartruse');
-      }
-      &:last-child {
-        margin-right: 0;
       }
     }
   }
