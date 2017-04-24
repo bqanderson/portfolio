@@ -8,6 +8,14 @@
 -------------------------------------------------------------- */
 /* =Clearfix extend
 -------------------------------------------------------------- */
+header {
+  *zoom: 1; }
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  header:after {
+    clear: both; }
+
 /* =Transition mixin
 -------------------------------------------------------------- */
 /*!
@@ -6114,6 +6122,57 @@ a {
   font-weight: 700;
   font-style: italic; }
 
+.menu-button {
+  display: inline-block;
+  padding: 1.5rem;
+  float: right;
+  cursor: pointer; }
+
+.burger-icon {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #E8E8E8;
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .burger-icon::before, .burger-icon::after {
+    position: absolute;
+    content: ""; }
+  .burger-icon::before {
+    top: -12px; }
+  .burger-icon::after {
+    top: 12px; }
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent; }
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -moz-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  -o-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg); }
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -o-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg); }
+
 .mybtn {
   display: inline-block;
   font-size: 1rem;
@@ -6163,56 +6222,6 @@ a {
 
 .dialog-top-left {
   border-radius: 1.5rem 0 1.5rem 1.5rem; }
-
-.menu-button {
-  display: inline-block;
-  padding: 1.5rem;
-  float: right; }
-
-.burger-icon {
-  position: relative;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .burger-icon, .burger-icon::before, .burger-icon::after {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #E8E8E8;
-    outline: 1px solid transparent;
-    -webkit-transition-property: background-color, -webkit-transform;
-    -moz-transition-property: background-color, -moz-transform;
-    -o-transition-property: background-color, -o-transform;
-    transition-property: background-color, transform;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
-  .burger-icon::before, .burger-icon::after {
-    position: absolute;
-    content: ""; }
-  .burger-icon::before {
-    top: -12px; }
-  .burger-icon::after {
-    top: 12px; }
-
-.menu-button.is-active .burger-icon {
-  background-color: transparent; }
-.menu-button.is-active .burger-icon::before {
-  -webkit-transform: translateY(12px) rotate(45deg);
-  -moz-transform: translateY(12px) rotate(45deg);
-  -ms-transform: translateY(12px) rotate(45deg);
-  -o-transform: translateY(12px) rotate(45deg);
-  transform: translateY(12px) rotate(45deg); }
-.menu-button.is-active .burger-icon::after {
-  -webkit-transform: translateY(-12px) rotate(-45deg);
-  -moz-transform: translateY(-12px) rotate(-45deg);
-  -ms-transform: translateY(-12px) rotate(-45deg);
-  -o-transform: translateY(-12px) rotate(-45deg);
-  transform: translateY(-12px) rotate(-45deg); }
 
 /*============================================================================
   #forms
@@ -6412,14 +6421,13 @@ header {
         width: 100%;
         vertical-align: top; } }
   header nav {
-    display: inline-block;
+    display: none;
     float: right;
     margin: 1.5rem 0; }
     header nav li.menu-item {
-      display: inline-block;
-      margin-right: 3rem; }
+      margin-bottom: 3rem; }
       header nav li.menu-item:last-child {
-        margin-right: 0; }
+        margin-bottom: 0; }
     header nav a.nav-link {
       font-size: 1rem;
       line-height: 1.5rem;

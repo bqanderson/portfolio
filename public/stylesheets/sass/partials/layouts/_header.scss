@@ -5,6 +5,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  @extend %clearfix;
   @include transition(all 0.3s ease-in-out);
   &.nav-up {
     top: -$base-line-height * 3;
@@ -24,14 +25,14 @@ header {
   }
 
   nav {
-    display: inline-block;
+    display: none;
     float: right;
     margin: $base-line-height 0;
     li.menu-item{
-      display: inline-block;
-      margin-right: $base-line-height * 2;
+      // display: inline-block;
+      margin-bottom: $base-line-height * 2;
       &:last-child {
-        margin-right: 0;
+        margin-bottom: 0;
       }
     }
     a.nav-link {
