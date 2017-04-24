@@ -6164,6 +6164,56 @@ a {
 .dialog-top-left {
   border-radius: 1.5rem 0 1.5rem 1.5rem; }
 
+.menu-button {
+  display: inline-block;
+  padding: 1.5rem;
+  float: right; }
+
+.burger-icon {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #E8E8E8;
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .burger-icon::before, .burger-icon::after {
+    position: absolute;
+    content: ""; }
+  .burger-icon::before {
+    top: -12px; }
+  .burger-icon::after {
+    top: 12px; }
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent; }
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -moz-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  -o-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg); }
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -o-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg); }
+
 /*============================================================================
   #forms
 ==============================================================================*/
@@ -6351,6 +6401,16 @@ header {
     font-size: 0;
     width: 95%;
     margin: 0 auto; }
+  header .header-nav {
+    width: 100%;
+    font-size: 1rem;
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    @media only screen and (min-width: 768px) {
+      header .header-nav {
+        width: 100%;
+        vertical-align: top; } }
   header nav {
     display: inline-block;
     float: right;

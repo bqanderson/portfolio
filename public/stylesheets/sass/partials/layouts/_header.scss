@@ -19,6 +19,10 @@ header {
     margin: 0 auto;
   }
 
+  .header-nav {
+    @include col(1, 1);
+  }
+
   nav {
     display: inline-block;
     float: right;
