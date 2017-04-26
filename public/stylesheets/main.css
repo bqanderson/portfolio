@@ -6030,12 +6030,9 @@ select::-ms-expand {
 html, body {
   background-color: #242331;
   font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #242331;
   margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
-    html, body {
-      font-size: 16px; } }
 
 a {
   text-decoration: none;
@@ -6425,6 +6422,7 @@ header {
     float: right;
     margin: 1.5rem 0; }
     header nav li.menu-item {
+      display: inline-block;
       margin-bottom: 3rem; }
       header nav li.menu-item:last-child {
         margin-bottom: 0; }

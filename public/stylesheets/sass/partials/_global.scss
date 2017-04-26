@@ -10,12 +10,9 @@
 html, body {
   background-color: main-color('raisin-black');
   font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: main-color('raisin-black');
   margin: 0 auto;
-  @media only screen and (min-width: $break-medium) {
-    font-size: 16px;
-  }
 }
 
 a {

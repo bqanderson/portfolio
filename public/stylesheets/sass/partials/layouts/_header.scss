@@ -29,7 +29,7 @@ header {
     float: right;
     margin: $base-line-height 0;
     li.menu-item{
-      // display: inline-block;
+      display: inline-block;
       margin-bottom: $base-line-height * 2;
       &:last-child {
         margin-bottom: 0;
