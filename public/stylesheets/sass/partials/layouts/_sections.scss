@@ -1,11 +1,18 @@
 // Intro Background Photo
 div.photo-break {
-	background: no-repeat fixed;
-	background-size: cover;
-	background-position: top center;
-	width: 100%;
-	height: $base-line-height * 30;
-	position: relative;
+  background: no-repeat fixed;
+  
+  background-image: url(../images/codetop01.jpg);
+  width: 100%;
+  height: auto;
+  @media(min-width: $break-medium){
+    background: no-repeat fixed;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: $base-line-height * 30;
+    position: relative;
+  }
 }
 
 section {
