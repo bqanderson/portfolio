@@ -16,6 +16,8 @@ header {
   header:after {
     clear: both; }
 
+/* =Placeholder mixin
+-------------------------------------------------------------- */
 /* =Transition mixin
 -------------------------------------------------------------- */
 /*!
@@ -6418,18 +6420,17 @@ header {
         width: 100%;
         vertical-align: top; } }
   header nav {
-    display: none;
     float: right;
     margin: 1.5rem 0; }
     header nav li.menu-item {
-      display: inline-block;
-      margin-bottom: 3rem; }
+      display: inline-block; }
       header nav li.menu-item:last-child {
         margin-bottom: 0; }
     header nav a.nav-link {
       font-size: 1rem;
       line-height: 1.5rem;
       display: inline-block;
+      padding-left: 1.5rem;
       font-weight: 200;
       letter-spacing: 0.2rem;
       color: #E8E8E8;

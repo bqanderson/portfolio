@@ -3,4 +3,4 @@ $(document).ready(function(){
     $('.menu-button').toggleClass('is-active');
     $('#mobile-nav').slideToggle();
   });
-})
+});
