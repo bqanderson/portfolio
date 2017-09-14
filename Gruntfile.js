@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         files: '**/*.js',
         tasks: ['uglify']
       }
-    }
+    },
   });
 
   // Load Grunt Plugins
